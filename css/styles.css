@@ -1,6 +1,9 @@
 :root {
   --main-font: "Roboto", sans-serif;
   --secondary-font: "Releway", sans-serif;
+  /* text color */
+  --main-txt-cl: #212121;
+  --secondary-txt-cl: #757575;
 }
 
 body {
@@ -8,21 +11,25 @@ body {
 }
 .link,
 .link-logo,
-.link-mail,
-.link-tel,
-.link-address {
+.link .header-email,
+.header-phone,
+.link-address,
+.link .footer-email,
+.footer-phone {
   text-decoration: none;
+  color: var(--main-txt-cl);
+  font-family: var(--main-font);
 }
+
 /* Cекція Героя */
 .hero {
   background-color: #2f303a;
-  width: 1600px;
-  height: 600px;
-  flex-shrink: 0;
+
 }
 /* Заголовок Героя */
 .hero .title {
-  font-family: Roboto;
+  width: 696px;
+  font-family: var(--main-font);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -43,7 +50,7 @@ body {
   line-height: 1.88;
   letter-spacing: 0.96px;
   color: #ffffff;
-  width: 216px;
-  height: 50px;
   flex-shrink: 0;
+  position: center;
 }
+.
