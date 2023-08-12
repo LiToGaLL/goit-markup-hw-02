@@ -7,28 +7,45 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--main-font);
 }
+/* Лінки */
 .link,
-.link-logo,
-.link .header-email,
+.header-email,
 .header-phone,
 .link-address,
-.link .footer-email,
+.footer-email,
 .footer-phone {
   text-decoration: none;
   color: var(--main-txt-cl);
   font-family: var(--main-font);
 }
+  
+/* --------------
+  Секція Хедера
+  ------------ */
+/* Logo */
+.link-logo {
+  color: #2196F3;
+  font-family: var(--secondary-font);
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0.78px;
+  text-decoration: none;
+}
+.logo-black {
+  color: #000000;
+}
+
+
 
 /* Cекція Героя */
 .hero {
   background-color: #2f303a;
-
 }
 /* Заголовок Героя */
-.hero .title {
-  width: 696px;
+.hero-title {
+  color: #ffffff;
   font-family: var(--main-font);
   font-weight: 900;
   font-size: 44px;
@@ -36,7 +53,6 @@ body {
   letter-spacing: 2.64px;
   text-align: center;
   text-transform: uppercase;
-  color: #ffffff;
 }
 /* Кнопка Героя */
 .hero .button {
@@ -53,4 +69,6 @@ body {
   flex-shrink: 0;
   position: center;
 }
-.
+.footer-email {
+  font-style: normal;
+}
