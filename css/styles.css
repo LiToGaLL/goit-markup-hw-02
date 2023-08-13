@@ -4,6 +4,9 @@
   /* text color */
   --main-txt-cl: #212121;
   --secondary-txt-cl: #757575;
+  /* background-color */
+  --main-bg-cl: #2f303a;
+  --secondary-bg-cl: #ffffff;
 }
 
 body {
@@ -20,13 +23,13 @@ body {
   color: var(--main-txt-cl);
   font-family: var(--main-font);
 }
-  
+
 /* --------------
   Секція Хедера
   ------------ */
 /* Logo */
 .link-logo {
-  color: #2196F3;
+  color: #2196f3;
   font-family: var(--secondary-font);
   font-size: 26px;
   font-weight: 700;
@@ -37,11 +40,9 @@ body {
   color: #000000;
 }
 
-
-
 /* Cекція Героя */
 .hero {
-  background-color: #2f303a;
+  background-color: var(--main-bg-cl);
 }
 /* Заголовок Героя */
 .hero-title {
@@ -55,20 +56,27 @@ body {
   text-transform: uppercase;
 }
 /* Кнопка Героя */
-.hero .button {
-  border-radius: 4px;
-  background: #2196f3;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+.btn {
+  color: #ffffff;
   text-align: center;
   font-family: Roboto;
   font-size: 16px;
   font-weight: 700;
-  line-height: 1.88;
+  line-height: 1.87;
   letter-spacing: 0.96px;
-  color: #ffffff;
-  flex-shrink: 0;
-  position: center;
+  border-radius: 4px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 }
-.footer-email {
+.btn:hover,
+.btn:focus {
+  background-color: #2196f3;
+  color: #ffffff;
+}
+
+.footer-email,
+.footer-phone,
+.link-address {
   font-style: normal;
 }
