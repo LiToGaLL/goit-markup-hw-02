@@ -45,7 +45,7 @@ body {
   background-color: var(--main-bg-cl);
 }
 /* Заголовок Героя */
-.hero .title {
+.hero-title {
   color: #ffffff;
   font-family: var(--main-font);
   font-weight: 900;
@@ -73,10 +73,6 @@ body {
 .btn:focus {
   background-color: #2196f3;
   color: #ffffff;
-}
-/* Секція особливостей працівників */
-.section .title {
-
 }
 
 .footer-email,
