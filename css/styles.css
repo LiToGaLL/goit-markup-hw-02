@@ -11,6 +11,9 @@
 
 body {
   font-family: var(--main-font);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.42px;
   color: var(--main-txt-cl);
 }
 /* Лінки */
@@ -27,7 +30,7 @@ body {
   font-size: 14px;
 }
 .link-studia:hover,
-.link-studia:focus, 
+.link-studia:focus,
 .header-email:hover,
 .header-email:focus {
   color: #2196f3;
@@ -38,7 +41,6 @@ body {
 .header-phone {
   color: var(--secondary-txt-cl);
 }
-
 
 .link,
 .header-email,
@@ -116,14 +118,11 @@ body {
   ---------------- */
 
 .list .title {
-  font-size: 14px;
   font-weight: 700;
-  letter-spacing: 0.42px;
   text-transform: uppercase;
 }
 .list .text {
   color: var(--secondary-txt-cl);
-  font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.42px;
 }
