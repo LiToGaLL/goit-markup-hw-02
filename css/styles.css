@@ -11,9 +11,11 @@
 
 body {
   font-family: var(--main-font);
+  color: var(--main-txt-cl);
 }
 /* Лінки */
 .link,
+.link-studia,
 .header-email,
 .header-phone,
 .link-address,
@@ -22,8 +24,39 @@ body {
   text-decoration: none;
   color: var(--main-txt-cl);
   font-family: var(--main-font);
+  font-size: 14px;
+}
+.link-studia:hover,
+.link-studia:focus, 
+.header-email:hover,
+.header-email:focus {
+  color: #2196f3;
+  cursor: pointer;
 }
 
+.header-email,
+.header-phone {
+  color: var(--secondary-txt-cl);
+}
+
+
+.link,
+.header-email,
+.header-phone {
+  font-weight: 500;
+  letter-spacing: 0.28px;
+}
+.link-address,
+.footer-email,
+.footer-phone {
+  color: #ffffff;
+  line-height: 1.71;
+  letter-spacing: 0.42px;
+}
+.footer-email,
+.footer-phone {
+  color: rgba(255, 255, 255, 0.6);
+}
 /* --------------
   Секція Хедера
   ------------ */
@@ -39,15 +72,19 @@ body {
 .logo-black {
   color: #000000;
 }
+.logo-white {
+  color: #ffffff;
+}
 
-/* Cекція Героя */
+/* -----------
+  Cекція Героя
+----------- */
 .hero {
   background-color: var(--main-bg-cl);
 }
 /* Заголовок Героя */
 .hero-title {
   color: #ffffff;
-  font-family: var(--main-font);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -57,9 +94,8 @@ body {
 }
 /* Кнопка Героя */
 .btn {
-  color: #ffffff;
+  color: #000000;
   text-align: center;
-  font-family: Roboto;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.87;
@@ -75,8 +111,51 @@ body {
   color: #ffffff;
 }
 
-.footer-email,
-.footer-phone,
-.link-address {
-  font-style: normal;
+/* ------------------
+  Секція особливостей 
+  ---------------- */
+
+.list .title {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}
+.list .text {
+  color: var(--secondary-txt-cl);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.42px;
+}
+
+/* --------
+  Заголовки 
+  ------- */
+.title-work,
+.title-team,
+.title-human {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 1.08px;
+}
+/* -----------------------
+   Секція розробників 
+   -------------------- */
+.title-human {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.48px;
+}
+.text-human {
+  color: var(--secondary-txt-cl);
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 0.48px;
+}
+/* --------
+  Підвал
+  ------  */
+.footer {
+  background-color: #2f303a;
 }
