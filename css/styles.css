@@ -2,8 +2,8 @@
   --main-font: "Roboto", sans-serif;
   --secondary-font: "Releway", sans-serif;
   /* text color */
-  --main-txt-cl: #212121;
-  --secondary-txt-cl: #757575;
+  --main-txt-cl: #757575;
+  --secondary-txt-cl: #212121;
   /* background-color */
   --main-bg-cl: #2f303a;
   --secondary-bg-cl: #ffffff;
@@ -19,6 +19,7 @@ body {
 /* Лінки */
 .link,
 .link-studia,
+.link-porfolio,
 .header-email,
 .header-phone,
 .link-address,
@@ -29,20 +30,26 @@ body {
   font-family: var(--main-font);
   font-size: 14px;
 }
+
+.link,
+.link-studia,
+.link-porfolio {
+  color: var(--secondary-txt-cl);
+}
+
 .link-studia:hover,
 .link-studia:focus,
 .header-email:hover,
-.header-email:focus {
+.header-email:focus,
+.link-porfolio:hover,
+.link-porfolio:focus {
   color: #2196f3;
   cursor: pointer;
 }
 
-.header-email,
-.header-phone {
-  color: var(--secondary-txt-cl);
-}
-
 .link,
+.link-studia,
+.link-porfolio,
 .header-email,
 .header-phone {
   font-weight: 500;
@@ -108,9 +115,22 @@ body {
   cursor: pointer;
 }
 .btn:hover,
-.btn:focus {
+.btn:focus,
+.btn-everyone:hover,
+.btn-everyone:focus {
   background-color: #2196f3;
   color: #ffffff;
+}
+
+/* Кнопки фільтрів */
+.btn-filters,
+.btn-everyone {
+  color: var(--secondary-txt-cl);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.63;
+  letter-spacing: 0.48px;
 }
 
 /* ------------------
@@ -120,9 +140,12 @@ body {
 .list .title {
   font-weight: 700;
   text-transform: uppercase;
-}
-.list .text {
   color: var(--secondary-txt-cl);
+}
+
+/* Секція тексту */
+.list .text {
+  color: var(--main-txt-cl);
   line-height: 1.71;
   letter-spacing: 0.42px;
 }
@@ -133,6 +156,7 @@ body {
 .title-work,
 .title-team,
 .title-human {
+  color: var(--secondary-txt-cl);
   text-align: center;
   font-size: 36px;
   font-weight: 700;
@@ -147,7 +171,7 @@ body {
   letter-spacing: 0.48px;
 }
 .text-human {
-  color: var(--secondary-txt-cl);
+  color: var(--main-txt-cl);
   text-align: center;
   font-size: 16px;
   letter-spacing: 0.48px;
