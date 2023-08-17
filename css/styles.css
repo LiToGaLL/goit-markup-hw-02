@@ -41,6 +41,8 @@ body {
 .link-studia:focus,
 .header-email:hover,
 .header-email:focus,
+.header-phone:hover,
+.header-phone:focus,
 .link-porfolio:hover,
 .link-porfolio:focus {
   color: #2196f3;
@@ -112,50 +114,63 @@ body {
   border-radius: 4px;
   background: #2196f3;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
 }
+
 .btn:hover,
 .btn:focus,
-.btn-everyone:hover,
-.btn-everyone:focus {
+.btn-filters:hover,
+.btn-filters:focus {
   background-color: #2196f3;
   color: #ffffff;
   border-radius: 4px;
   background: #2196f3;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 }
 
 /* Кнопки фільтрів */
 .btn-filters,
-.btn-everyone {
+.active-btn {
   color: var(--secondary-txt-cl);
   text-align: center;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.63;
   letter-spacing: 0.48px;
+  border-radius: 4px;
+  background-color: #f5f4fa;
 }
-
+.active-btn {
+  background-color: #2196f3;
+  color: #ffffff;
+  cursor: pointer;
+}
 /* ------------------
   Секція особливостей 
   ---------------- */
 
-.list .title {
+.teasing-title {
   font-weight: 700;
   text-transform: uppercase;
   color: var(--secondary-txt-cl);
 }
 
 /* Секція тексту */
-.list .text {
+.teasing-text {
   color: var(--main-txt-cl);
   line-height: 1.71;
-  letter-spacing: 0.42px;
+}
+
+.text-portfolio {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.48px;
 }
 
 /* --------
   Заголовки 
   ------- */
+.title,
 .title-work,
 .title-team,
 .title-human {
@@ -163,6 +178,13 @@ body {
   text-align: center;
   font-size: 36px;
   font-weight: 700;
+  letter-spacing: 1.08px;
+}
+.title-portfolio {
+  color: var(--secondary-txt-cl);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
   letter-spacing: 1.08px;
 }
 /* -----------------------
@@ -184,4 +206,16 @@ body {
   ------  */
 .footer {
   background-color: #2f303a;
+  text-decoration: none;
+}
+.list,
+.list-work,
+.list-people,
+.list-footer {
+  list-style: none;
+}
+.link-address,
+.footer-email,
+.footer-phone {
+  text-decoration:none;
 }
