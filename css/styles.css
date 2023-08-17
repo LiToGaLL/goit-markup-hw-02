@@ -63,6 +63,7 @@ body {
   color: #ffffff;
   line-height: 1.71;
   letter-spacing: 0.42px;
+  font-style: normal;
 }
 .footer-email,
 .footer-phone {
@@ -213,9 +214,4 @@ body {
 .list-people,
 .list-footer {
   list-style: none;
-}
-.link-address,
-.footer-email,
-.footer-phone {
-  text-decoration:none;
 }
