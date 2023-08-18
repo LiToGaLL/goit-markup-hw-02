@@ -1,6 +1,6 @@
 :root {
   --main-font: "Roboto", sans-serif;
-  --secondary-font: "Releway", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
   /* text color */
   --main-txt-cl: #757575;
   --secondary-txt-cl: #212121;
@@ -36,15 +36,16 @@ body {
 .link-porfolio {
   color: var(--secondary-txt-cl);
 }
-
-.link-studia:hover,
-.link-studia:focus,
-.header-email:hover,
-.header-email:focus,
+.link:hover,
+.link:focus,
 .header-phone:hover,
-.header-phone:focus,
-.link-porfolio:hover,
-.link-porfolio:focus {
+.header-phone:focus {
+  color: #2196f3;
+  cursor: pointer;
+}
+.link-studia,
+.header-email,
+.link-porfolio {
   color: #2196f3;
   cursor: pointer;
 }
@@ -106,7 +107,7 @@ body {
 }
 /* Кнопка Героя */
 .btn {
-  color: #000000;
+  color: #ffffff;
   text-align: center;
   font-size: 16px;
   font-weight: 700;
@@ -114,17 +115,15 @@ body {
   letter-spacing: 0.96px;
   border-radius: 4px;
   background: #2196f3;
+  cursor: pointer;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
-.btn:hover,
-.btn:focus,
 .btn-filters:hover,
 .btn-filters:focus {
-  background-color: #2196f3;
-  color: #ffffff;
+  background-color: #f5f4fa;
+  color: #212121;
   border-radius: 4px;
-  background: #2196f3;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   cursor: pointer;
 }
@@ -145,6 +144,7 @@ body {
   background-color: #2196f3;
   color: #ffffff;
   cursor: pointer;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
 }
 /* ------------------
   Секція особливостей 
@@ -154,6 +154,7 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   color: var(--secondary-txt-cl);
+  font-size: 14px;
 }
 
 /* Секція тексту */
@@ -202,12 +203,25 @@ body {
   font-size: 16px;
   letter-spacing: 0.48px;
 }
+.item-human {
+  border-radius: 0px 0px 4px 4px;
+  background: #ffffff;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+}
 /* --------
   Підвал
   ------  */
 .footer {
   background-color: #2f303a;
   text-decoration: none;
+}
+.link-address:hover,
+.link-address:focus,
+.footer-email:hover,
+.footer-email:focus,
+.footer-phone:hover,
+.footer-phone:focus {
+  color: #2196f3;
 }
 .list,
 .list-work,
