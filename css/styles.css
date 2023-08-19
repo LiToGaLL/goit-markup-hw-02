@@ -94,6 +94,7 @@ body {
 ----------- */
 .hero {
   background-color: var(--main-bg-cl);
+  width: 1600px;
 }
 /* Заголовок Героя */
 .hero-title {
@@ -104,6 +105,7 @@ body {
   letter-spacing: 2.64px;
   text-align: center;
   text-transform: uppercase;
+  width: 696px;
 }
 /* Кнопка Героя */
 .btn {
@@ -121,8 +123,8 @@ body {
 
 .btn-filters:hover,
 .btn-filters:focus {
-  background-color: #f5f4fa;
-  color: #212121;
+  background-color: #2196f3;
+  color: #ffffff;
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   cursor: pointer;
@@ -149,12 +151,19 @@ body {
 /* ------------------
   Секція особливостей 
   ---------------- */
-
+.item-studia {
+  width: 270px;
+}
 .teasing-title {
   font-weight: 700;
   text-transform: uppercase;
   color: var(--secondary-txt-cl);
   font-size: 14px;
+}
+.item-portfolio {
+  width: 370px;
+  border: 1px solid #eeeeee;
+  background-color: #ffffff;
 }
 
 /* Секція тексту */
@@ -204,10 +213,15 @@ body {
   letter-spacing: 0.48px;
 }
 .item-human {
+  width: 270px;
   border-radius: 0px 0px 4px 4px;
   background: #ffffff;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
 }
+.section-people {
+  background-color: #f5f4fa;
+}
+
 /* --------
   Підвал
   ------  */
