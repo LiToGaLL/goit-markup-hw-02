@@ -38,13 +38,15 @@ body {
 }
 .link:hover,
 .link:focus,
+.header-email:hover,
+.header-email:focus,
 .header-phone:hover,
 .header-phone:focus {
   color: #2196f3;
   cursor: pointer;
 }
 .link-studia,
-.header-email,
+
 .link-porfolio {
   color: #2196f3;
   cursor: pointer;
@@ -240,9 +242,7 @@ body {
 .list,
 .list-work,
 .list-people,
-.list-footer {
+.list-footer,
+.list-filters {
   list-style: none;
-}
-.list {
-  display: inline;
 }
