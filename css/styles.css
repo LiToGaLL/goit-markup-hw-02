@@ -243,3 +243,6 @@ body {
 .list-footer {
   list-style: none;
 }
+.list {
+  display: inline;
+}
