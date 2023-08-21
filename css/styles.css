@@ -46,7 +46,6 @@ body {
   cursor: pointer;
 }
 .link-studia,
-
 .link-porfolio {
   color: #2196f3;
   cursor: pointer;
@@ -71,6 +70,9 @@ body {
 .footer-email,
 .footer-phone {
   color: rgba(255, 255, 255, 0.6);
+}
+.link-filter {
+  text-decoration: none;
 }
 /* --------------
   Секція Хедера
@@ -178,6 +180,7 @@ body {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.48px;
+  color: var(--main-txt-cl);
 }
 
 /* --------
