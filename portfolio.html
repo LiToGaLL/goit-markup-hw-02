@@ -8,6 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css "
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
@@ -16,30 +20,36 @@
   </head>
   <body>
     <header class="header">
-      <a class="link-logo" href="">Web<span class="logo-black">Studio</span></a>
-      <nav class="navigtion">
+      <div class="container-header">
+        <a class="link-logo" href=""
+          >Web<span class="logo-black">Studio</span></a
+        >
+        <nav class="navigtion">
+          <ul class="list">
+            <li class="item">
+              <a class="link" href="./index.html">Студія</a>
+            </li>
+            <li class="item">
+              <a class="link-porfolio" href="">Портфоліо</a>
+            </li>
+            <li class="item">
+              <a class="link" href="">Контакти</a>
+            </li>
+          </ul>
+        </nav>
         <ul class="list">
           <li class="item">
-            <a class="link" href="./index.html">Студія</a>
+            <a class="header-email" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
           </li>
-          <li class="item">
-            <a class="link-porfolio" href="">Портфоліо</a>
-          </li>
-          <li class="item">
-            <a class="link" href="">Контакти</a>
+          <li class="header-phone">
+            <a class="header-phone" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
           </li>
         </ul>
-      </nav>
-      <ul class="list">
-        <li class="item">
-          <a class="header-email" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li class="header-phone">
-          <a class="header-phone" href="tel:+380961111111">+38 096 111 11 11</a>
-        </li>
-      </ul>
+      </div>
     </header>
     <main>
       <!-- <h1>Фільтри</h1> -->
