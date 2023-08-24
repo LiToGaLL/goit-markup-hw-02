@@ -16,6 +16,18 @@ body {
   letter-spacing: 0.42px;
   color: var(--main-txt-cl);
 }
+/* Утиліти */
+
+.list,
+.list-work,
+.list-people,
+.list-footer,
+.list-filters {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 /* Лінки */
 .link,
 .link-studia,
@@ -77,26 +89,41 @@ body {
 /* --------------
   Секція Хедера
   ------------ */
-.container-header {
-display: flex;
-align-items: center;
-}
-.site-nav,
-.auth-nav {
+
+.container-header .navigtion {
   display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1170px;
+}
+/* Site nav */
+.site-nav {
+  display: flex;
+  margin-left: 93px;
 }
 .site-nav .item + .item {
   margin-left: 50px;
 }
-.site-nav .link,
-.auth-nav .link {
- display: block;
- padding-top: 32;
- padding-bottom: 32px;
- background-color: tomato;
+.site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
-.auth-nav .item +.item {
+/* Auth nav */
+.auth-nav .item + .item {
   margin-left: 40px;
+}
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+}
+.auth-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 /* Logo */
@@ -137,7 +164,6 @@ align-items: center;
   padding: 0;
   margin: 0 auto;
   margin-bottom: 30px;
-
 }
 /* Кнопка Героя */
 .btn {
@@ -150,7 +176,7 @@ align-items: center;
   background: #2196f3;
   cursor: pointer;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  padding: 10px 32px ;
+  padding: 10px 32px;
 }
 
 .btn-filters:hover,
@@ -267,11 +293,4 @@ align-items: center;
 .footer-phone:hover,
 .footer-phone:focus {
   color: #2196f3;
-}
-.list,
-.list-work,
-.list-people,
-.list-footer,
-.list-filters {
-  list-style: none;
 }
