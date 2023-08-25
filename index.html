@@ -21,12 +21,12 @@
   <body>
     <!-- Шапка сторінки -->
     <header class="header">
-      <div class="container-header">
+      <div class="container">
+        <!-- Лого сторінки -->
+        <a class="link-logo" href=""
+          >Web<span class="logo-black">Studio</span></a
+        >
         <nav class="navigtion">
-          <!-- Лого сторінки -->
-          <a class="link-logo" href=""
-            >Web<span class="logo-black">Studio</span></a
-          >
           <!-- Навігація -->
           <ul class="list site-nav">
             <li class="item">
@@ -40,7 +40,7 @@
             </li>
           </ul>
         </nav>
-        <ul class="list auth-nav">
+        <ul class="list auth-header">
           <li class="item">
             <a class="header-email link" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
@@ -57,15 +57,13 @@
     <main>
       <!-- Секція Героя -->
       <section class="hero">
-        <div class="container">
-          <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="btn" type="button">Замовити послугу</button>
-        </div>
+        <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+        <button class="btn" type="button">Замовити послугу</button>
       </section>
       <!-- Секція особливостей -->
       <section class="section">
-        <div class="container special">
-          <ul class="list">
+        <div class="container">
+          <ul class="list special">
             <li class="item-studia">
               <h3 class="teasing-title">УВАГА ДО ДЕТАЛЕЙ</h3>
               <p class="teasing-text">
@@ -98,107 +96,115 @@
       </section>
       <!-- Секція робіт -->
       <section class="section-work">
-        <h2 class="title-work">Чим ми займаємося</h2>
-        <ul class="list-work">
-          <li class="item-work">
-            <img
-              src="./img/box-1.jpg"
-              alt="програміст пише код"
-              width="370"
-              height="294"
-            />
-          </li>
-          <li class="item-work">
-            <img
-              src="./img/box-2.jpg"
-              alt="дивиться дизайни телефонів"
-              width="370"
-              height="294"
-            />
-          </li>
-          <li class="item-work">
-            <img
-              src="./img/box-3.jpg"
-              alt="на плашеті обирає кольори"
-              width="370"
-              height="294"
-            />
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="title-work">Чим ми займаємося</h2>
+          <ul class="list-work">
+            <li class="item-work">
+              <img
+                src="./img/box-1.jpg"
+                alt="програміст пише код"
+                width="370"
+                height="294"
+              />
+            </li>
+            <li class="item-work">
+              <img
+                src="./img/box-2.jpg"
+                alt="дивиться дизайни телефонів"
+                width="370"
+                height="294"
+              />
+            </li>
+            <li class="item-work">
+              <img
+                src="./img/box-3.jpg"
+                alt="на плашеті обирає кольори"
+                width="370"
+                height="294"
+              />
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- Секція розробників -->
       <section class="section-people">
-        <h2 class="title-team">Наша команда</h2>
-        <ul class="list-people">
-          <li class="item-human">
-            <img
-              src="./img/foto-1.jpg"
-              alt="фото чоловіка"
-              width="270"
-              height="260"
-            />
-            <h3 class="title-human">Ігор Дем'яненко</h3>
-            <p class="text-human" lang="en">Product Designer</p>
-          </li>
-          <li class="item-human">
-            <img
-              src="./img/foto-2.jpg"
-              alt="фото жінки"
-              width="270"
-              height="260"
-            />
-            <h3 class="title-human">Ольга Рєпіна</h3>
-            <p class="text-human" lang="en">Frontend Developer</p>
-          </li>
-          <li class="item-human">
-            <img
-              src="./img/foto-3.jpg"
-              alt="фото чоловіка"
-              width="270"
-              height="260"
-            />
-            <h3 class="title-human">Микола Тарасов</h3>
-            <p class="text-human" lang="en">Marketing</p>
-          </li>
-          <li class="item-human">
-            <img
-              src="./img/foto-4.jpg"
-              alt="фото чоловіка"
-              width="270"
-              height="260"
-            />
-            <h3 class="title-human">Михайло Єрмаков</h3>
-            <p class="text-human" lang="en">UI Designer</p>
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="title-team">Наша команда</h2>
+          <ul class="list-people">
+            <li class="item-human">
+              <img
+                src="./img/foto-1.jpg"
+                alt="фото чоловіка"
+                width="270"
+                height="260"
+              />
+              <h3 class="title-human">Ігор Дем'яненко</h3>
+              <p class="text-human" lang="en">Product Designer</p>
+            </li>
+            <li class="item-human">
+              <img
+                src="./img/foto-2.jpg"
+                alt="фото жінки"
+                width="270"
+                height="260"
+              />
+              <h3 class="title-human">Ольга Рєпіна</h3>
+              <p class="text-human" lang="en">Frontend Developer</p>
+            </li>
+            <li class="item-human">
+              <img
+                src="./img/foto-3.jpg"
+                alt="фото чоловіка"
+                width="270"
+                height="260"
+              />
+              <h3 class="title-human">Микола Тарасов</h3>
+              <p class="text-human" lang="en">Marketing</p>
+            </li>
+            <li class="item-human">
+              <img
+                src="./img/foto-4.jpg"
+                alt="фото чоловіка"
+                width="270"
+                height="260"
+              />
+              <h3 class="title-human">Михайло Єрмаков</h3>
+              <p class="text-human" lang="en">UI Designer</p>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <!-- Підвал -->
     <footer class="footer">
-      <a class="link-logo" href="">Web<span class="logo-white">Studio</span></a>
-      <address class="address">
-        <ul class="list-footer">
-          <li class="item-footer">
-            <a
-              class="link-address"
-              href="https://goo.gl/maps/btcpsNHgYNXdNAkd9"
-              target="_blank"
-              rel="noopener noreferrer"
-              >м. Київ, пр-т Лесі Українки, 26</a
-            >
-          </li>
-          <li class="item-email">
-            <a class="footer-email" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="item-phone">
-            <a class="footer-phone" href="tel:+380961111111"
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
-      </address>
+      <div class="container">
+        <a class="link-logo" href=""
+          >Web<span class="logo-white">Studio</span></a
+        >
+        <address class="address">
+          <ul class="list-footer">
+            <li class="item-footer">
+              <a
+                class="link-address"
+                href="https://goo.gl/maps/btcpsNHgYNXdNAkd9"
+                target="_blank"
+                rel="noopener noreferrer"
+                >м. Київ, пр-т Лесі Українки, 26</a
+              >
+            </li>
+            <li class="item-email">
+              <a class="footer-email" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="item-phone">
+              <a class="footer-phone" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>

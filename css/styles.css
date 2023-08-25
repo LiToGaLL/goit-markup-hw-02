@@ -90,7 +90,7 @@ body {
   Секція Хедера
   ------------ */
 
-.container-header .navigtion {
+.container {
   display: flex;
   align-items: center;
   margin-left: auto;
@@ -112,15 +112,15 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-/* Auth nav */
-.auth-nav .item + .item {
+/* Auth header */
+.auth-header .item + .item {
   margin-left: 40px;
 }
-.auth-nav {
+.auth-header {
   display: flex;
   margin-left: auto;
 }
-.auth-nav .link {
+.auth-header .link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -207,10 +207,26 @@ body {
 /* ------------------
   Секція особливостей 
   ---------------- */
+.special {
+  display:flex;
+  margin-left: auto;
+  margin-right: auto;
+  height: 98px;
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+.special .item-studia + .item-studia {
+  margin-left: 30px;
+}
 .item-studia {
   width: 270px;
+  display: block;
+  padding: 0;
+
+
 }
 .teasing-title {
+  /* padding: 0; */
   font-weight: 700;
   text-transform: uppercase;
   color: var(--secondary-txt-cl);
