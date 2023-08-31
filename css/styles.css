@@ -209,25 +209,29 @@ body {
   letter-spacing: 0.48px;
   background-color: #f5f4fa;
   border-radius: 4px;
+  padding: 6px 22px;
 }
 .active-btn {
   background-color: #2196f3;
   color: #ffffff;
   cursor: pointer;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+ 
 }
-img {
-  flex-shrink: 0;
-}
+
 /* Фільтри порфоліо */
 .item-portfolio {
-  margin: 0;
+  flex-shrink: 0;
+  flex-grow: 1;
 }
+
+
+
 .filters {
   display: block;
   margin-top: 94px;
   margin-bottom: 94px;
-width: 1170;
+  
 }
 .list-filters {
   display: flex;
@@ -240,6 +244,9 @@ width: 1170;
   align-items: center;
   align-content: flex-start;
   justify-content: center;
+  margin: auto;
+  padding: 0;
+
 }
 .list-filters .item-filter + .item-filter {
   margin-left: 8px;
