@@ -8,7 +8,10 @@
   --main-bg-cl: #2f303a;
   --secondary-bg-cl: #ffffff;
 }
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   margin: 0;
   padding: 0;
 }
@@ -205,6 +208,7 @@ body {
   line-height: 1.63;
   letter-spacing: 0.48px;
   background-color: #f5f4fa;
+  border-radius: 4px;
 }
 .active-btn {
   background-color: #2196f3;
@@ -212,11 +216,40 @@ body {
   cursor: pointer;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
 }
+img {
+  flex-shrink: 0;
+}
+/* Фільтри порфоліо */
+.item-portfolio {
+  margin: 0;
+}
+.filters {
+  display: block;
+  margin-top: 94px;
+  margin-bottom: 94px;
+width: 1170;
+}
+.list-filters {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.list-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: flex-start;
+  justify-content: center;
+}
+.list-filters .item-filter + .item-filter {
+  margin-left: 8px;
+}
+
 /* ------------------
   Секція особливостей 
   ---------------- */
 .special {
-  display:flex;
+  display: flex;
   margin-left: auto;
   margin-right: auto;
   height: 98px;
@@ -230,11 +263,8 @@ body {
   width: 270px;
   display: block;
   padding: 0;
-
-
 }
 .teasing-title {
-
   font-weight: 700;
   text-transform: uppercase;
   color: var(--secondary-txt-cl);
