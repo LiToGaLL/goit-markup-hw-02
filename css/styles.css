@@ -11,13 +11,15 @@
 h1,
 h2,
 h3,
-h4 {
-  margin: 0;
-  padding: 0;
-}
+h4,
+h5,
+h6,
 p {
   margin: 0;
-  padding: 0;
+}
+
+img {
+  display: block;
 }
 
 body {
@@ -108,7 +110,8 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  width: 1170px;
+  width: 1200px;
+  outline: 1px solid red;
 }
 /* Site nav */
 .site-nav {
@@ -216,7 +219,6 @@ body {
   color: #ffffff;
   cursor: pointer;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
- 
 }
 
 /* Фільтри порфоліо */
@@ -225,13 +227,10 @@ body {
   flex-grow: 1;
 }
 
-
-
 .filters {
   display: block;
   margin-top: 94px;
   margin-bottom: 94px;
-  
 }
 .list-filters {
   display: flex;
@@ -246,7 +245,6 @@ body {
   justify-content: center;
   margin: auto;
   padding: 0;
-
 }
 .list-filters .item-filter + .item-filter {
   margin-left: 8px;
