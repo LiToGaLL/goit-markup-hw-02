@@ -40,6 +40,10 @@ body {
   padding: 0;
   margin: 0;
 }
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 /* Лінки */
 .link,
@@ -113,6 +117,7 @@ body {
   width: 1200px;
   outline: 1px solid red;
 }
+
 /* Site nav */
 .site-nav {
   display: flex;
@@ -225,13 +230,11 @@ body {
 .item-portfolio {
   flex-shrink: 0;
   flex-grow: 1;
-  border: 1px solid #EEEEEE;
+  border: 1px solid #eeeeee;
 }
 
 .filters {
   display: block;
-  margin-top: 94px;
-  margin-bottom: 94px;
 }
 .list-filters {
   display: flex;
@@ -259,8 +262,6 @@ body {
   margin-left: auto;
   margin-right: auto;
   height: 98px;
-  margin-top: 94px;
-  margin-bottom: 94px;
 }
 .special .item-studia + .item-studia {
   margin-left: 30px;
@@ -281,6 +282,24 @@ body {
   width: 370px;
   border: 1px solid #eeeeee;
   background-color: #ffffff;
+}
+
+/* section works */
+.work {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.title-work {
+  display: flex;
+  margin-bottom: 50px;
+}
+.list-work {
+  display: flex;
+
+  align-items: center;
+}
+.list-work .item-work + .item-work {
+  margin-left: 30px;
 }
 
 /* Секція тексту */
@@ -319,7 +338,16 @@ body {
 /* -----------------------
    Секція розробників 
    -------------------- */
+.people {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.title-team {
+  display: flex;
+  margin-bottom: 50px;
+}
 .title-human {
+  display: flex;
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.48px;
@@ -338,6 +366,12 @@ body {
 }
 .section-people {
   background-color: #f5f4fa;
+}
+.list-people {
+  display: flex;
+}
+.list-people .item-human + .item-human {
+  margin-left: 30px;
 }
 
 /* --------
