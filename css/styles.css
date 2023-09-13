@@ -225,6 +225,7 @@ body {
 .item-portfolio {
   flex-shrink: 0;
   flex-grow: 1;
+  border: 1px solid #EEEEEE;
 }
 
 .filters {
