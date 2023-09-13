@@ -280,11 +280,15 @@ body {
   margin-bottom: 10px;
 }
 .item-portfolio {
-  display: flex;
-  width: 370px;
+  display: block;
   border: 1px solid #eeeeee;
   background-color: #ffffff;
+
+
+.item-portfolio:nth-child(3n+3) {
+  margin-right: 0;
 }
+
 
 /* section works */
 .work {
