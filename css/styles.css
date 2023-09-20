@@ -228,6 +228,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  
 }
 
 .list-filters {
@@ -283,11 +284,9 @@ body {
   display: block;
   border: 1px solid #eeeeee;
   background-color: #ffffff;
-
-
-.item-portfolio:nth-child(3n+3) {
-  margin-right: 0;
+  margin: 15px;
 }
+
 
 
 /* section works */
