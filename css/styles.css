@@ -244,8 +244,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  /* background-color: teal; */
-  
 }
 
 .item-portfolio {
@@ -286,7 +284,6 @@ body {
   font-size: 14px;
   margin-bottom: 10px;
 }
-px
 
 /* section works */
 .work {
@@ -299,9 +296,8 @@ px
 }
 .list-work {
   display: flex;
-
-  align-items: center;
 }
+
 .list-work .item-work + .item-work {
   margin-left: 30px;
 }
@@ -392,6 +388,27 @@ px
   background-color: #2f303a;
   text-decoration: none;
 }
+.cellar {
+  display: block;
+  flex-wrap: wrap;
+}
+.logo-footer {
+  display: flex;
+  padding-top: 60px;
+  padding-bottom: 28px;
+}
+
+.item-footer {
+  padding-bottom: 12px;
+}
+.item-email {
+  padding-bottom: 12px;
+}
+.item-phone {
+  display: flex;
+  padding-bottom: 60px;
+}
+
 .link-address:hover,
 .link-address:focus,
 .footer-email:hover,
