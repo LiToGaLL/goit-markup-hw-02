@@ -86,7 +86,6 @@ body {
 .link-porfolio,
 .header-email,
 .header-phone {
-  font-size: 14px;
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.28px;
@@ -108,18 +107,16 @@ body {
 }
 
 .container {
-  /* display: flex;
-  align-items: center; */
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
   width: 1200px;
- 
 }
 .header-box {
-   display: flex;
+  display: flex;
   align-items: center;
+  border-bottom: 1px;
 }
 /* navigation */
 .navigation {
@@ -129,7 +126,6 @@ body {
 /* Site nav */
 .site-nav {
   display: flex;
-
 }
 .site-nav .item + .item {
   margin-left: 50px;
@@ -161,6 +157,8 @@ body {
   font-size: 26px;
   font-weight: 700;
   letter-spacing: 0.78px;
+  line-height: normal;
+  font-style: normal;
   text-decoration: none;
 }
 .logo-black {
@@ -277,6 +275,11 @@ body {
 /* ------------------
   Секція особливостей 
   ---------------- */
+
+.section-special {
+  padding-bottom: 0;
+}
+
 .special {
   display: flex;
   margin-left: auto;
@@ -302,12 +305,15 @@ body {
 }
 
 /* section works */
+.section-work {
+  padding-bottom: 0;
+}
+
 .work {
   flex-wrap: wrap;
   justify-content: center;
 }
 .title-work {
-  display: flex;
   margin-bottom: 50px;
 }
 .list-work {
@@ -365,15 +371,14 @@ body {
   justify-content: center;
 }
 .title-team {
-  display: flex;
   margin-bottom: 50px;
 }
 .title-human {
-  display: flex;
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.48px;
   text-align: center;
+  margin-bottom: 10px;
 }
 .text-human {
   color: var(--main-txt-cl);
@@ -396,6 +401,10 @@ body {
 .list-people .item-human + .item-human {
   margin-left: 30px;
 }
+.people-box {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 
 /* --------
   Підвал
@@ -404,14 +413,13 @@ body {
   background-color: #2f303a;
   text-decoration: none;
 }
-.cellar {
-  display: block;
-  flex-wrap: wrap;
+.footer-box {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .logo-footer {
-  display: flex;
-  padding-top: 60px;
-  padding-bottom: 28px;
+  display: block;
+  margin-bottom: 28px;
 }
 
 .item-footer {
@@ -421,8 +429,8 @@ body {
   padding-bottom: 12px;
 }
 .item-phone {
-  display: flex;
-  padding-bottom: 60px;
+
+ 
 }
 
 .link-address:hover,
