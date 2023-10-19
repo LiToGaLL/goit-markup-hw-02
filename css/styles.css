@@ -305,9 +305,7 @@ body {
 }
 
 /* section works */
-.section-work {
-  padding-bottom: 0;
-}
+
 
 .work {
   flex-wrap: wrap;
