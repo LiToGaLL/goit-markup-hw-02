@@ -113,10 +113,12 @@ body {
   padding-right: 15px;
   width: 1200px;
 }
+.header {
+  border-bottom: 1px solid #ececec;
+}
 .header-box {
   display: flex;
   align-items: center;
-  border-bottom: 1px;
 }
 /* navigation */
 .navigation {
@@ -174,8 +176,6 @@ body {
 .hero {
   background-color: var(--main-bg-cl);
   text-align: center;
-}
-.hero-box {
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -237,11 +237,6 @@ body {
 }
 
 /* Фільтри порфоліо */
-.filters {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
 
 .list-filters {
   display: flex;
@@ -260,10 +255,8 @@ body {
 
 .item-portfolio {
   width: 370px;
-  border: 1px solid #eeeeee;
   margin-right: 30px;
   margin-bottom: 30px;
-  flex-shrink: 0;
 }
 .item-portfolio:nth-child(3n) {
   margin-right: 0;
@@ -306,7 +299,6 @@ body {
 
 /* section works */
 
-
 .work {
   flex-wrap: wrap;
   justify-content: center;
@@ -333,9 +325,7 @@ body {
   line-height: 1.88;
   letter-spacing: 0.48px;
   color: var(--main-txt-cl);
-  margin-bottom: 20px;
-  margin-left: 24px;
-  margin-right: 24px;
+
 }
 
 /* --------
@@ -351,15 +341,18 @@ body {
   font-weight: 700;
   letter-spacing: 1.08px;
 }
+.portfolio-box {
+  padding: 20px 24px;
+  border: 0 1px 1px 1px solid #eeeeee;
+}
 .title-portfolio {
   color: var(--secondary-txt-cl);
   font-size: 18px;
   font-weight: 700;
   line-height: 2;
   letter-spacing: 1.08px;
-  margin-top: 20px;
-  margin-right: 24px;
-  margin-left: 24px;
+  margin-bottom: 4px;
+
 }
 /* -----------------------
    Секція розробників 
@@ -410,25 +403,22 @@ body {
 .footer {
   background-color: #2f303a;
   text-decoration: none;
-}
-.footer-box {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
 .logo-footer {
   display: block;
   margin-bottom: 28px;
 }
 
 .item-footer {
-  padding-bottom: 12px;
+  margin-bottom: 12px;
 }
 .item-email {
-  padding-bottom: 12px;
+  margin-bottom: 12px;
 }
 .item-phone {
-
- 
 }
 
 .link-address:hover,
