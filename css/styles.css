@@ -66,6 +66,7 @@ body {
 .link-porfolio {
   color: var(--secondary-txt-cl);
 }
+
 .link:hover,
 .link:focus,
 .header-email:hover,
@@ -76,7 +77,8 @@ body {
   cursor: pointer;
 }
 .link-studia,
-.link-porfolio {
+.link-porfolio,
+.header-email {
   color: #2196f3;
   cursor: pointer;
 }
@@ -89,6 +91,7 @@ body {
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.28px;
+  
 }
 .link-address,
 .footer-email,
@@ -343,7 +346,8 @@ body {
 }
 .portfolio-box {
   padding: 20px 24px;
-  border: 0 1px 1px 1px solid #eeeeee;
+  border: 1px solid #ECECEC;
+  border-top: 0;
 }
 .title-portfolio {
   color: var(--secondary-txt-cl);
