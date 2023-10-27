@@ -147,9 +147,24 @@ body {
   margin-left: auto;
 }
 .auth-header .link {
-  /* display: block; */
   padding-top: 32px;
   padding-bottom: 32px;
+  margin-right: 10px;
+}
+
+.item-header::before {
+  content:"";
+  width: 16px;
+  height: 16px;
+  
+}
+.header-icon-mail {
+margin-right: 10px;
+}
+.header-icon-mail:hover,
+.header-icon-mail:focus {
+  color: #2196f3;
+  cursor: pointer;
 }
 
 /* Logo */
