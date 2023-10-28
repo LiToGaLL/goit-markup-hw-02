@@ -140,11 +140,12 @@ body {
 }
 /* Auth header */
 .auth-header .item + .item {
-  margin-left: 40px;
+  margin-left: 50px;
 }
 .auth-header {
   display: flex;
   margin-left: auto;
+  align-items: center;
 }
 .auth-header .link {
   padding-top: 32px;
@@ -152,18 +153,13 @@ body {
   margin-right: 10px;
 }
 
-.item-header::before {
-  content:"";
-  width: 16px;
-  height: 16px;
-  
+.header-icon {
+  margin-right: 10px;
+  fill: #757575;
 }
-.header-icon-mail {
-margin-right: 10px;
-}
-.header-icon-mail:hover,
-.header-icon-mail:focus {
-  color: #2196f3;
+.header-icon:hover,
+.header-icon:focus {
+  fill: #2196f3;
   cursor: pointer;
 }
 
@@ -195,11 +191,12 @@ margin-right: 10px;
   padding-top: 200px;
   padding-bottom: 200px;
   max-width: 1600px;
-  background-image: linear-gradient( 
-    to right, 
-    rgba(47, 48, 58, 0.4), 
-    rgba(47, 48, 58, 0.4)
-    ), url("../img/icon/fon-hero.png");
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../img/icon/fon-hero.png");
   background-repeat: no-repeat;
   background-position: center;
   margin-left: auto;
@@ -304,11 +301,10 @@ margin-right: 10px;
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  /* height: 98px; */
+  align-items: stretch;
+  gap: 30px;
 }
-.special .item-studia + .item-studia {
-  margin-left: 30px;
-}
+
 .item-studia {
   width: 270px;
   display: block;
@@ -323,6 +319,19 @@ margin-right: 10px;
   line-height: normal;
   padding: 0;
 }
+
+.icon {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  background-color:  #f5f4fa;
+  background-size: contain;
+  justify-content: center;
+  background-position: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
 
 /* section works */
 
