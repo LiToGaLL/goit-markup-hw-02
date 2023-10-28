@@ -324,14 +324,14 @@ body {
   display: flex;
   width: 270px;
   height: 120px;
-  background-color:  #f5f4fa;
+  border-radius: 4px;
+  background-color: #f5f4fa;
   background-size: contain;
   justify-content: center;
   background-position: center;
   align-items: center;
   margin-bottom: 30px;
 }
-
 
 /* section works */
 
@@ -431,7 +431,36 @@ body {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+.team-socials {
+  display: flex;
+  margin-top: 16px;
+  list-style: none;
+  justify-content: center;
+  gap: 10px;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.link-socials {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  outline: 1px solid red;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  cursor: pointer;
 
+ 
+}
+.socials-icon:hover,
+.socials-icon:focus {
+  fill: #ffffff;
+}
+.link-socials:hover,
+.link-socials:focus {
+  background-color: #2196f3;
+}
 /* --------
   Підвал
   ------  */
