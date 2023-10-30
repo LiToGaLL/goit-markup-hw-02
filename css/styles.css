@@ -450,9 +450,12 @@ body {
   justify-content: center;
   background-color: #ffffff;
   cursor: pointer;
-
- 
+  fill: #AFB1B8;
 }
+.socials-icon {
+  fill: #afb1b8;
+}
+
 .socials-icon:hover,
 .socials-icon:focus {
   fill: #ffffff;
