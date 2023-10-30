@@ -37,7 +37,8 @@ body {
 .list-footer,
 .list-filters,
 .list-portfolio,
-.list-partners {
+.list-partners,
+.join-list {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -499,14 +500,14 @@ body {
 }
 .link-partners:hover,
 .link-partners:focus {
-  border-color:#2196f3;
+  border-color: #2196f3;
 }
 .partners-icon {
   fill: #afb1b8;
 }
 .partners-icon:hover,
 .partners-icon:focus {
-  fill:#2196f3;
+  fill: #2196f3;
 }
 /* --------
   Підвал
@@ -516,6 +517,12 @@ body {
   text-decoration: none;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+.container-footer {
+  display: flex;
+}
+.footer-box {
+  margin-right: 70px;
 }
 
 .logo-footer {
@@ -529,8 +536,50 @@ body {
 .item-email {
   margin-bottom: 12px;
 }
-.item-phone {
+.join-container {
+  display: flex;
+  margin-right: auto;
+  flex-direction: column;
 }
+.join-list {
+  display: flex;
+  gap: 10px;
+}
+.join-title {
+  font-family: var(--main-font);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-style: normal;
+  line-height: normal;
+  margin-bottom: 20px;
+  margin-top: 12px;
+}
+.join-item {
+  height: 44px;
+  width: 44px;
+  fill: rgba(255, 255, 255, 0.1);
+}
+.join-icon {
+  fill: #ffffff;
+}
+.link-join {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.10);
+  cursor: pointer; 
+}
+.link-join:hover,
+.link-join:focus {
+  background-color: #2196f3;
+}
+
 
 .link-address:hover,
 .link-address:focus,
