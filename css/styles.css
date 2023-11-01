@@ -141,23 +141,26 @@ body {
   padding-bottom: 32px;
 }
 /* Auth header */
-.auth-header .item + .item {
+/* .auth-header .item + .item {
   margin-left: 50px;
-}
+} */
 .auth-header {
   display: flex;
+  gap: 30px;
   margin-left: auto;
   align-items: center;
 }
 .auth-header .link {
   padding-top: 32px;
   padding-bottom: 32px;
-  margin-right: 10px;
+  /* margin-right: 10px; */
 }
 
 .header-icon {
+  display: flex;
   margin-right: 10px;
   fill: #757575;
+  align-items: baseline;
 }
 .header-icon:hover,
 .header-icon:focus {
@@ -458,14 +461,16 @@ body {
   fill: #afb1b8;
 }
 
-.socials-icon:hover,
-.socials-icon:focus {
-  fill: #ffffff;
-}
+
 .link-socials:hover,
 .link-socials:focus {
   background-color: #2196f3;
 }
+.link-socials:hover .socials-icon,
+.link-socials:focus .socials-icon{
+  fill: #ffffff;
+}
+
 /* Section partners */
 .partners {
   flex-wrap: wrap;
@@ -499,16 +504,17 @@ body {
   border: 1px solid #afb1b8;
 }
 .link-partners:hover,
-.link-partners:focus {
+.link-partners:focus  {
   border-color: #2196f3;
 }
 .partners-icon {
   fill: #afb1b8;
 }
-.partners-icon:hover,
-.partners-icon:focus {
+.link-partners:hover .partners-icon,
+.link-partners:focus .partners-icon {
   fill: #2196f3;
 }
+
 /* --------
   Підвал
   ------  */
@@ -520,6 +526,7 @@ body {
 }
 .container-footer {
   display: flex;
+  align-items: baseline;
 }
 .footer-box {
   margin-right: 70px;
@@ -555,7 +562,7 @@ body {
   font-style: normal;
   line-height: normal;
   margin-bottom: 20px;
-  margin-top: 12px;
+  /* margin-top: 12px; */
 }
 .join-item {
   height: 44px;
