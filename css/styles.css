@@ -162,7 +162,15 @@ body {
 
 .header-icon {
   margin-right: 10px;
+  fill: #757575;
 }
+.header-email:hover .header-icon,
+.header-email:focus .header-icon,
+.header-phone:focus .header-icon,
+.header-phone:hover .header-icon {
+  fill: #2196f3;
+}
+
 
 /* Logo */
 
