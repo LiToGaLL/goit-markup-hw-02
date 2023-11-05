@@ -465,6 +465,8 @@ body {
   fill: #afb1b8;
 }
 .socials-icon {
+  width: 20px;
+  height: 20px;
   fill: #afb1b8;
 }
 
@@ -576,6 +578,8 @@ body {
   fill: rgba(255, 255, 255, 0.1);
 }
 .join-icon {
+  width: 20px;
+  height: 20px;
   fill: #ffffff;
 }
 .link-join {
