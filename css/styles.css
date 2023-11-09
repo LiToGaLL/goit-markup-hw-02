@@ -63,7 +63,6 @@ body {
   font-size: 14px;
 }
 
-
 .link,
 .link-studia,
 .link-porfolio {
@@ -141,6 +140,36 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
 }
+.link-studia {
+  position: relative;
+}
+.link-studia::after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 100%;
+  bottom: 0;
+  background-color: #2196f3;
+  height: 4px;
+  border-radius: 2px;
+  margin-bottom: -1px;
+}
+.link-porfolio {
+  position: relative;
+}
+
+.link-porfolio::after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 100%;
+  bottom: 0;
+  background-color: #2196f3;
+  height: 4px;
+  border-radius: 2px;
+  margin-bottom: -1px;
+}
+
 .header-email,
 .header-phone {
   font-style: normal;
@@ -171,7 +200,6 @@ body {
 .header-phone:hover .header-icon {
   fill: #2196f3;
 }
-
 
 /* Logo */
 
@@ -246,7 +274,8 @@ body {
 .btn-filters:focus {
   background-color: #2196f3;
   color: #ffffff;
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
 
@@ -267,7 +296,8 @@ body {
   background-color: #2196f3;
   color: #ffffff;
   cursor: pointer;
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
 /* Фільтри порфоліо */
@@ -302,7 +332,8 @@ body {
   display: block;
 }
 .link-filter:hover {
-box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 
 /* ------------------
@@ -364,6 +395,32 @@ box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0
 
 .list-work .item-work + .item-work {
   margin-left: 30px;
+}
+.item-work {
+  position: relative;
+}
+.description-text {
+  display: flex;
+  position: absolute;
+  content: '';
+  width: 100%;
+  bottom: 0;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(47, 48, 58, 0.80);
+}
+.text-work {
+  color: #fff;
+
+  text-align: center;
+  font-family: var(--main-font);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
 }
 
 /* Секція тексту */
@@ -574,7 +631,6 @@ box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0
   font-style: normal;
   line-height: normal;
   margin-bottom: 20px;
-
 }
 .join-item {
   height: 44px;
