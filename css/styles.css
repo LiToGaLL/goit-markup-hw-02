@@ -145,7 +145,7 @@ body {
 }
 .link-studia::after {
   position: absolute;
-  content: '';
+  content: "";
   display: block;
   width: 100%;
   bottom: 0;
@@ -160,7 +160,7 @@ body {
 
 .link-porfolio::after {
   position: absolute;
-  content: '';
+  content: "";
   display: block;
   width: 100%;
   bottom: 0;
@@ -241,6 +241,30 @@ body {
   margin-right: auto;
   background-size: 1600px 600px;
 }
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-wrapper {
+  position: absolute;
+  width: 528px;
+  height: 581px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+.modal-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+} 
 
 /* Заголовок Героя */
 .hero-title {
@@ -402,13 +426,13 @@ body {
 .description-text {
   display: flex;
   position: absolute;
-  content: '';
+  content: "";
   width: 100%;
   bottom: 0;
   height: 70px;
   justify-content: center;
   align-items: center;
-  background-color: rgba(47, 48, 58, 0.80);
+  background-color: rgba(47, 48, 58, 0.8);
 }
 .text-work {
   color: #fff;
