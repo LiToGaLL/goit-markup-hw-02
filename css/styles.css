@@ -61,14 +61,13 @@ body {
   color: var(--main-txt-cl);
   font-family: var(--main-font);
   font-size: 14px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link,
 .link-studia,
 .link-porfolio {
   color: var(--secondary-txt-cl);
-  
-  
 }
 
 .link:hover,
@@ -79,7 +78,6 @@ body {
 .header-phone:focus {
   color: #2196f3;
   cursor: pointer;
-  
 }
 .link-studia,
 .link-porfolio {
@@ -96,6 +94,7 @@ body {
   line-height: normal;
   letter-spacing: 0.28px;
 }
+
 .link-address,
 .footer-email,
 .footer-phone {
@@ -252,7 +251,7 @@ body {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
   transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -269,7 +268,8 @@ body {
   transform: translate(-50%, -50%);
   border-radius: 4px;
   background-color: #fff;
-  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 .modal-btn {
   position: absolute;
@@ -279,18 +279,17 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid rgba(0, 0, 0, 0.10);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0;
   border-radius: 50%;
   width: 30px;
   height: 30px;
   background-color: #ffffff;
-} 
+}
 .close {
   position: absolute;
   width: 18px;
   height: 18px;
-
 }
 /* Заголовок Героя */
 .hero-title {
@@ -341,6 +340,9 @@ body {
   background-color: #f5f4fa;
   border-radius: 4px;
   padding: 6px 22px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .active-btn {
   background-color: #2196f3;
@@ -380,10 +382,20 @@ body {
 }
 .link-filter {
   display: block;
+  width: 370px;
+  height: 404px;
 }
 .link-filter:hover {
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
     0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+.card-actions {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+.text-description {
+  
 }
 
 /* ------------------
@@ -574,6 +586,7 @@ body {
   background-color: #ffffff;
   cursor: pointer;
   fill: #afb1b8;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .socials-icon {
   width: 20px;
@@ -605,6 +618,7 @@ body {
   align-items: center;
   margin-right: auto;
   margin-left: auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .item-partners {
   display: flex;
@@ -701,6 +715,7 @@ body {
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.1);
   cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-join:hover,
 .link-join:focus {
