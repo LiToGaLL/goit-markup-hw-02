@@ -61,14 +61,16 @@ body {
   color: var(--main-txt-cl);
   font-family: var(--main-font);
   font-size: 14px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ 
 }
 
 .link,
 .link-studia,
 .link-porfolio {
   color: var(--secondary-txt-cl);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 .link:hover,
 .link:focus,
@@ -93,6 +95,7 @@ body {
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.28px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-address,
@@ -102,6 +105,7 @@ body {
   line-height: 1.71;
   letter-spacing: 0.42px;
   font-style: normal;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-email,
 .footer-phone {
@@ -195,6 +199,7 @@ body {
 .header-icon {
   margin-right: 10px;
   fill: #757575;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-email:hover .header-icon,
 .header-email:focus .header-icon,
@@ -258,6 +263,9 @@ body {
   visibility: hidden;
   pointer-events: none;
 }
+.backdrop.is-hidden .modal-wrapper {
+  transform: translate(-50%, -50%) scale(0.8);
+}
 
 .modal-wrapper {
   position: absolute;
@@ -265,11 +273,12 @@ body {
   height: 581px;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1);
   border-radius: 4px;
   background-color: #fff;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
-    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 250,opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 .modal-btn {
   position: absolute;
@@ -385,6 +394,7 @@ body {
   display: block;
   width: 370px;
   height: 404px;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   
 }
 .link-filter:hover {
@@ -613,6 +623,7 @@ body {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-socials:hover,
@@ -622,6 +633,7 @@ body {
 .link-socials:hover .socials-icon,
 .link-socials:focus .socials-icon {
   fill: #ffffff;
+ 
 }
 
 /* Section partners */
@@ -639,7 +651,7 @@ body {
   align-items: center;
   margin-right: auto;
   margin-left: auto;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ 
 }
 .item-partners {
   display: flex;
@@ -656,6 +668,7 @@ body {
   justify-content: center;
   border-radius: 4px;
   border: 1px solid #afb1b8;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-partners:hover,
 .link-partners:focus {
@@ -663,6 +676,7 @@ body {
 }
 .partners-icon {
   fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-partners:hover .partners-icon,
 .link-partners:focus .partners-icon {
