@@ -76,7 +76,17 @@
                   <use href="./img/sprite.svg#close-btn" class="close-icon"></use>
                 </svg>
               </button>
-            
+              <div class="modal-fill">
+                <p>Залиште свої дані, ми вам передзвонимо</p>
+                <form name="modal-form">
+                <label class="modal-label">Ім'я<input type="text"></label>
+                <label class="modal-label">Телефон<input type="text"></label>
+                <label class="modal-label">Пошта<input type="text"></label>
+                <label class="modal-label">Коментар<textarea name="" id="" cols="30" rows="10"></textarea></label>
+                <label class="modal-label"><input type="checkbox"></label>
+                <button type="submit">Відправити</button>
+              </form></div>
+             
             </div>
           </div>
         </div>
@@ -502,9 +512,9 @@
          </ul>
         </div>
         <div class="subscribe-footer">
-          <h3 class="subscribe-text">Підпишіться на розсилку</h3>
+          <p class="subscribe-text">Підпишіться на розсилку</p>
           <form class="form-main-footer">
-            <input class="subscribe-input-footer" type="email" name="mail" id="mail" placeholder="E-mail">
+            <input class="subscribe-input-footer" type="email" name="mail" id="mail" placeholder="E-mail" required>
             <button type="submit" class="btn-main-footer">Підписатися<svg class="icon-send" width="24" height="24">
                 <use href="./img/sprite.svg#icon-send"></use>
               </svg>
