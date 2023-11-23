@@ -77,13 +77,27 @@
                 </svg>
               </button>
               <div class="modal-fill">
-                <p>Залиште свої дані, ми вам передзвонимо</p>
+                <p class="text-modal-fill">Залиште свої дані, ми вам передзвонимо</p>
                 <form name="modal-form">
-                <label class="modal-label">Ім'я<input type="text"></label>
-                <label class="modal-label">Телефон<input type="text"></label>
-                <label class="modal-label">Пошта<input type="text"></label>
-                <label class="modal-label">Коментар<textarea name="" id="" cols="30" rows="10"></textarea></label>
-                <label class="modal-label"><input type="checkbox"></label>
+                <label class="modal-label">
+                  <span class="label">Ім'я</span>
+                  <input type="text" class="modal-input" name="modal-name" required>
+                </label>
+                <label class="modal-label">
+                  <samp class="label">Телефон</samp>
+                  <input type="tel" class="modal-input" name="modal-phone" required>
+                </label>
+                <label class="modal-label">
+                  <samp class="label">Пошта</samp>
+                  <input type="email" class="modal-input" name="modal-email" required>
+                </label>
+                <label class="modal-label">
+                  <samp class="label">Коментар</samp>
+                  <textarea name="feedback" rows="5" placeholder="Введіть текст"></textarea>
+                </label>
+                <label class="modal-label">
+                  <input type="checkbox">Погоджуюся з розсилкою та приймаю Умови договору
+                </label>
                 <button type="submit">Відправити</button>
               </form></div>
              
