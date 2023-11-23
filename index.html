@@ -82,21 +82,34 @@
                 <label class="modal-label">
                   <span class="label">Ім'я</span>
                   <input type="text" class="modal-input" name="modal-name" required>
+                  <svg class="modal-icon">
+                    <use href="./img/sprite.svg#person-black"></use>
+                  </svg>
                 </label>
                 <label class="modal-label">
-                  <samp class="label">Телефон</samp>
+                  <span class="label">Телефон</span>
                   <input type="tel" class="modal-input" name="modal-phone" required>
+                  <svg class="modal-icon" >
+                    <use href="./img/sprite.svg#phone-black"></use>
+                  </svg>
                 </label>
                 <label class="modal-label">
-                  <samp class="label">Пошта</samp>
+                  <span class="label">Пошта</span>
                   <input type="email" class="modal-input" name="modal-email" required>
+                  <svg class="modal-icon" width="18" heigth="18">
+                    <use href="./img/sprite.svg#email-black"></use>
+                  </svg>
                 </label>
-                <label class="modal-label">
-                  <samp class="label">Коментар</samp>
-                  <textarea name="feedback" rows="5" placeholder="Введіть текст"></textarea>
+                <label class="comment">
+                  <span class="label">Коментар</span>
+                  <textarea class="comment-text" name="feedback" rows="5" placeholder="Введіть текст"></textarea>
                 </label>
-                <label class="modal-label">
-                  <input type="checkbox">Погоджуюся з розсилкою та приймаю Умови договору
+                <label class="modal-chexbox" for="chexbox">
+                  <input class="chexbox" type="checkbox" id="chexbox" required>
+                  <span class="modal-chexbox-custom"></span>
+                  <span class="agree">Погоджуюся з розсилкою та приймаю 
+                    <a class="agree-link">Умови договору</a>
+                  </span>
                 </label>
                 <button type="submit">Відправити</button>
               </form></div>
