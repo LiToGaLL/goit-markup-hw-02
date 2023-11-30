@@ -791,7 +791,7 @@ body {
   Заголовки 
   ------- */
 .title,
-.title-work,
+.title-work
  {
   color: var(--secondary-txt-cl);
   text-align: center;
