@@ -1,0 +1,112 @@
+/* PAGE--HEADER */
+.header {
+    border-bottom: 1px solid #ececec;
+  }
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+  }
+  /* Logo */
+  
+  
+  .nav__list {
+    margin-left: 93px;
+    display: flex;
+    gap: 50px;
+
+    &--link {
+        display: block;
+        padding-top: 32px;
+        padding-bottom: 32px;
+      }
+      
+    &--link__current {
+        position: relative;
+        color: var(--blue-cl);
+        cursor: pointer;
+      }
+    &--link__current::after {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 100%;
+        bottom: 0;
+        background-color: var(--blue-cl);
+        height: 4px;
+        border-radius: 2px;
+        margin-bottom: -1px;
+      }
+      
+  }
+ 
+  
+  .contact--list {
+    display: flex;
+    gap: 30px;
+    margin-left: auto;
+    align-items: center;
+  }
+  .contact__mail {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--main-txt-cl);
+    font-family: var(--main-font);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+    transition: color var(--primary-translate);
+
+    &:hover,
+    &:focus {
+      color: var(--blue-cl);
+      cursor: pointer;
+    }
+
+    &:hover .contact__icon,
+    &:focus .contact__icon {
+      fill: var(--blue-cl);
+    }
+  }
+
+  .contact__tel {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--main-txt-cl);
+    font-family: var(--main-font);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+    transition: color var(--primary-translate);
+
+    &:hover,
+    &:focus {
+      color: var(--blue-cl);
+      cursor: pointer;
+    }
+
+    &:focus .contact__icon,
+    &:hover .contact__icon {
+      fill: var(--blue-cl);
+    }
+  }
+
+  
+  .contact__icon {
+    margin-right: 10px;
+    fill: var(--main-cl);
+    transition: fill var(--primary-translate);
+  }
+
+ 

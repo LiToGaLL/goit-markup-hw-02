@@ -1,0 +1,25 @@
+body {
+    font-family: var(--main-font);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.42px;
+    color: var(--main-txt-cl);
+  }
+.logo {
+    color: var(--blue-cl);
+    font-family: var(--secondary-font);
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0.78px;
+    line-height: normal;
+    font-style: normal;
+    text-decoration: none;
+
+   &--black {
+     color: var(--black-cl);
+   }
+   &--white {
+    color: var(--white-cl);
+   }
+ }
+
