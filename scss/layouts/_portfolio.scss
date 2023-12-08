@@ -1,0 +1,60 @@
+.portfolio {
+   padding-top: 94px;
+   padding-bottom: 94px;
+}
+
+    /* portfolio card */
+
+
+.portfolio__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+    margin: 0;  
+  }
+  
+.portfolio__item {
+   width: 370px;
+  }
+
+.portfolio__link {
+    color: var(--secondary-txt-cl);
+    display: block;
+    transform: translate(0);
+    transition: box-shadow var(--primary-translate);
+
+    &:hover {
+        box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+          0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+      }
+  }
+
+.wokr__name{
+    padding: 20px 24px;
+    border: 1px solid #ececec;
+    border-top: 0;
+  }
+.work__title{
+    display: flex;
+    color: var(--secondary-txt-cl);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 2;
+    letter-spacing: 1.08px;
+    margin-bottom: 4px;
+
+  }
+.card-hidden{
+    position: relative;
+    overflow: hidden;
+}
+
+.type__work {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.48px;
+    color: var(--main-txt-cl);
+    font-family: var(--main-txt-cl);
+  }
