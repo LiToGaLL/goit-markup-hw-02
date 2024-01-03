@@ -1,9 +1,11 @@
 .work {
     flex-wrap: wrap;
     justify-content: center;
+    padding-top: 94px;
+    padding-bottom: 94px;
 
     &__title {
-        color: var(--secondary-txt-cl);
+      color: var(--secondary-txt-cl);
         text-align: center;
         font-size: 36px;
         font-weight: 700;

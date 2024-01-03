@@ -7,9 +7,15 @@
 @import './base/container';
 @import './base/reset';
 
+
 // Components
 @import './components/filters';
+@import './components/join';
 @import './components/ovarlay';
+@import './components/socials';
+@import './components/modal-form';
+@import './components/sibscribe-form';
+
 
 // Layouts
 @import './layouts/header';

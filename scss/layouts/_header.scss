@@ -39,7 +39,10 @@
         border-radius: 2px;
         margin-bottom: -1px;
       }
-      
+    &--link:focus,
+    &--link:hover {
+      color: var(--blue-cl);
+    }  
   }
  
   

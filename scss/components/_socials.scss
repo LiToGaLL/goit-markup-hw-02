@@ -1,0 +1,41 @@
+.team-socials {
+    display: flex;
+    margin-top: 16px;
+    list-style: none;
+    justify-content: center;
+    gap: 10px;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+.link-socials {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary-bg-cl);
+    cursor: pointer;
+    fill: #afb1b8;
+    transition: background-color var(--primary-translate);
+
+    &:hover,
+    &:focus {
+      background-color: var(--blue-cl);
+    }
+
+  }
+
+  .socials-icon {
+    width: 20px;
+    height: 20px;
+    fill: #afb1b8;
+    transition: fill var(--primary-translate);
+
+    .link-socials:hover &,
+    .link-socials:focus & {
+      fill: var(--white-cl);
+    }
+  }
+  
+  
