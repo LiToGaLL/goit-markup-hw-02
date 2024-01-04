@@ -838,11 +838,22 @@ img {
   display: -ms-flexbox;
   display: flex;
   gap: 50px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .nav__list--link {
+  color: #212121;
+  font-family: var(--main-font);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+  margin: 0;
+  -webkit-transition: color var(--primary-translate);
+  transition: color var(--primary-translate);
 }
 .nav__list--link__current {
   position: relative;
