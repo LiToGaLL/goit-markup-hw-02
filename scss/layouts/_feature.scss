@@ -1,45 +1,80 @@
-// .feature {
-//     padding-top: 94px;
-//     padding-bottom: 0;
+.feature {
+ 
 
-//     // &__list {
-//     //     display: flex;
-//     //     margin-left: auto;
-//     //     margin-right: auto;
-//     //     align-items: stretch;
-//     //     gap: 30px;
-//     //   }
+    &__list {
+
+        @include mq(mobile) {
+            padding: 0;
+            margin: 0;
+            
+        }
+       
+        @include mq(tablet) {
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            gap: 30px;
+           }
+        @include mq(desktop) {
+            align-items: stretch;
+        }
       
-//     // &__item {
-//     //     width: 270px;
-//     //     display: block;
-//     //     padding: 0;
-//     //   }
+      }
       
-//     // &__icon {
-//     //     display: flex;
-//     //     width: 270px;
-//     //     height: 120px;
-//     //     border-radius: 4px;
-//     //     background-color: #f5f4fa;
-//     //     background-size: contain;
-//     //     justify-content: center;
-//     //     background-position: center;
-//     //     align-items: center;
-//     //     margin-bottom: 30px;
-//     //   }
-//     // &__title {
-//     //     font-weight: 700;
-//     //     text-transform: uppercase;
-//     //     color: var(--secondary-txt-cl);
-//     //     font-size: 14px;
-//     //     margin-bottom: 10px;
-//     //     line-height: normal;
-//     //     padding: 0;
-//     //   }
-//     // &__text {
-//     //     color: var(--main-txt-cl);
-//     //     line-height: 1.71;
-//     //   }
-//   }
+    &__item {
+        @include mq(mobile-only) {
+            padding-bottom: 30px;
+        }
+        @include mq(tablet) {
+            display: flex;
+            flex-wrap: wrap;
+           }
+     
+        @include mq(desktop) {
+        width: 270px;
+        display: block;
+        padding: 0;
+       }
+      }
+      
+    &__icon {
+        display: flex;
+
+        @include mq(mobile) {
+            width: 100%;
+            height: 120px;
+            border-radius: 4px;
+            background-color: #f5f4fa;
+            background-size: contain;
+            justify-content: center;
+            background-position: center;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        @include mq(tablet) {
+            width: 354px;
+        }
+        @include mq(desktop) {
+            width: 270px;
+        }
+       }
+    &__title {
+      
+        font-weight: 700;
+        text-transform: uppercase;
+        color: var(--secondary-txt-cl);
+        font-size: 14px;
+        margin-bottom: 10px;
+        line-height: normal;
+        padding: 0;
+
+        @include mq(mobile-only) {
+            text-align: center;
+        }
+      }
+    &__text {
+        color: var(--main-txt-cl);
+        line-height: 1.71;
+      }
+  }
   

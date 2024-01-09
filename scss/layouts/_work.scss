@@ -1,8 +1,17 @@
 .work {
+  @include mq(mobile-only) {
+    display: none;
+  }
+  @include mq(tablet-only) {
+    display: none;
+  }
+
+  @include mq(desktop) {
     flex-wrap: wrap;
     justify-content: center;
-    padding-top: 94px;
-    padding-bottom: 94px;
+   
+  }
+   
 
     &__title {
       color: var(--secondary-txt-cl);
