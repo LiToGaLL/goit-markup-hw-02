@@ -2,64 +2,48 @@
  
 
     &__list {
-
-        @include mq(mobile) {
-            padding: 0;
-            margin: 0;
-            
-        }
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
        
-        @include mq(tablet) {
+        gap: 30px;
+
+        @media screen and (min-width: 768px) {
             display: flex;
-            margin-left: auto;
-            margin-right: auto;
-            gap: 30px;
-           }
+            flex-wrap: wrap;
+        }
+
         @include mq(desktop) {
             align-items: stretch;
         }
-      
-      }
-      
+        }    
+
     &__item {
-        @include mq(mobile-only) {
-            padding-bottom: 30px;
-        }
-        @include mq(tablet) {
-            display: flex;
-            flex-wrap: wrap;
-           }
-     
-        @include mq(desktop) {
+       
         width: 270px;
         display: block;
         padding: 0;
-       }
+
+        @media screen and (min-width: 768px) {
+            width: 50%;
+        }
+                  
       }
       
     &__icon {
         display: flex;
+        width: 270px;
+        height: 120px;
+        border-radius: 4px;
+        background-color: #f5f4fa;
+        background-size: contain;
+        justify-content: center;
+        background-position: center;
+        align-items: center;
+        margin-bottom: 30px;
+      }
 
-        @include mq(mobile) {
-            width: 100%;
-            height: 120px;
-            border-radius: 4px;
-            background-color: #f5f4fa;
-            background-size: contain;
-            justify-content: center;
-            background-position: center;
-            align-items: center;
-            margin-bottom: 30px;
-        }
-        @include mq(tablet) {
-            width: 354px;
-        }
-        @include mq(desktop) {
-            width: 270px;
-        }
-       }
     &__title {
-      
         font-weight: 700;
         text-transform: uppercase;
         color: var(--secondary-txt-cl);
@@ -67,11 +51,8 @@
         margin-bottom: 10px;
         line-height: normal;
         padding: 0;
-
-        @include mq(mobile-only) {
-            text-align: center;
-        }
       }
+
     &__text {
         color: var(--main-txt-cl);
         line-height: 1.71;
