@@ -1002,6 +1002,7 @@ img {
   margin-right: auto;
   gap: 30px;
 }
+
 @media screen and (min-width: 768px) {
   .feature__list {
     display: -webkit-box;
