@@ -1008,11 +1008,11 @@ img {
 }
 @media screen and (min-width: 480px) {
   .hero {
-    max-width: 480px;
+    min-width: 480px;
+    height: 400px;
     padding-top: 118px;
     padding-bottom: 118px;
-    height: 400px;
-    background-size: 100%;
+    background-size: 480px 400px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1279,10 +1279,6 @@ img {
   letter-spacing: 0.48px;
 }
 
-.clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 .clients__title {
   margin-bottom: 50px;
   color: var(--secondary-txt-cl);
@@ -1304,10 +1300,20 @@ img {
   margin-right: auto;
   margin-left: auto;
 }
+@media screen and (min-width: 480px) {
+  .clients__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 .clients__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100vw;
   width: 170px;
   height: 92px;
   -webkit-box-align: center;
@@ -1317,12 +1323,20 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media screen and (max-width: 767.98px) {
+  .clients__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 
 .clients__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 170px;
   height: 92px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1337,6 +1351,15 @@ img {
 }
 .clients__link:hover, .clients__link:focus {
   border-color: var(--blue-cl);
+}
+@media screen and (min-width: 480px) {
+  .clients__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .clients__icon {

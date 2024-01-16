@@ -16,11 +16,11 @@
     background-size: 1600px 600px;
 
     @include mq(mobile) {
-      max-width: 480px;
+      min-width: 480px;
+      height: 400px;
       padding-top: 118px;
       padding-bottom: 118px;
-      height: 400px;
-      background-size: 100%;
+      background-size: 480px 400px;
     }
 
     @include mq(desktop) {
