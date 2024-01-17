@@ -1,33 +1,60 @@
 .hero {
     background-color: var(--main-bg-cl);
     text-align: center;
-  
+    // width: 480px;
+    // height: 400px;
     max-width: 1600px;
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../img/icon/fon-hero.png");
+      url("../img/hero_style/hero480.jpg");
     background-repeat: no-repeat;
     background-position: center;
     margin-left: auto;
     margin-right: auto;
-    background-size: 1600px 600px;
+    // background-size: 480px 400px;
+    // background-size: 1600px 600px;
+    padding-top: 118px;
+    padding-bottom: 118px;
 
-    @include mq(mobile) {
-      min-width: 480px;
-      height: 400px;
-      padding-top: 118px;
-      padding-bottom: 118px;
-      background-size: 480px 400px;
+
+    @include mq(mobile-only) {
+      .hero {
+        width: 480px;
+        height: 400px;
+        background-image: url("../img/hero_style/hero480.jpg");
+        background-size: 480px 400px;
+      }
+   
+      @media (min-resolution: 2dppx) {
+        .hero {
+          background-image: url("../img/hero_style/hero480@2x.jpg");
+        }
+      }
+      
+    }
+    @include mq(tablet-only) {
+      .hero {
+        width: 768px;
+        height: 400px;
+        background-image: url("../img/hero_style/hero768.jpg");
+        background-size: 768px 400px;
+      }
+      @media (min-resolution: 2dppx) {
+        .hero {
+          background-image: url("../img/hero_style/hero768@2x.jpg");
+        }
+      }
+
     }
 
-    @include mq(desktop) {
-      padding-top: 200px;
-      padding-bottom: 200px;
-      height: 600px;
-    }
+    // @include mq(desktop) {
+    //   padding-top: 200px;
+    //   padding-bottom: 200px;
+    //   height: 600px;
+    // }
   
   }
 
