@@ -71,13 +71,11 @@
       margin-left: auto;
 
       @include mq(mobile-only) {
-        display: flex;
-        flex: 40%;
+        flex-basis: calc((100% - 30px) / 2);
       }
 
       @include mq(tablet-only) {
-        display: flex;
-        flex: 30.6%;
+        flex-basis: calc((100% - 60px) / 3);
       }
       @include mq(desktop) {
         width: 100%;

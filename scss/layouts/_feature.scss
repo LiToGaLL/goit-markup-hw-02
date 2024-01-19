@@ -39,8 +39,9 @@
         }
 
        @include mq(tablet-only) {
-          width: 100%;
-          flex: 40%;
+          // width: 100%;
+          // flex: 40%;
+          flex-basis: calc((100% - 30px) / 2);
         }
                   
       }
