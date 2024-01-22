@@ -1,7 +1,6 @@
 .hero {
     background-color: var(--main-bg-cl);
     text-align: center;
-    // height: 600px;
     max-width: 1600px;
     background-image: linear-gradient(
         to right,
@@ -13,58 +12,51 @@
     background-position: center;
     margin-left: auto;
     margin-right: auto;
-    // background-size: 1600px 600px;
+    background-size: cover;
     padding-top: 118px;
     padding-bottom: 118px;
 
-
-    // @include mq(mobile-only) {
-    //   background-image: linear-gradient(
-    //     to right,
-    //     rgba(47, 48, 58, 0.4),
-    //     rgba(47, 48, 58, 0.4)
-    //   ),
-    //   url("../img/hero_style/hero480.jpg");
-   
-    //   @media (min-resolution: 2dppx) {
-    //     background-image: linear-gradient(
-    //       to right,
-    //       rgba(47, 48, 58, 0.4),
-    //       rgba(47, 48, 58, 0.4)
-    //     ),
-    //     url("../img/hero_style/hero480@2x.jpg");
-    //   }
+    @include mq(mobile) {
+      background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../img/hero_style/hero480.jpg");
       
-    // }
-    @include mq(tablet) {
-      .hero {
+      @include mq(retina){
         background-image: linear-gradient(
           to right,
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url("../img/hero_style/hero-fon/hero-768_1x.jpg");
+        url("../img/hero_style/hero480@2x.jpg");
+       
       }
-      @media (min-resolution: 2dppx) {
+    }
+    @include mq(tablet) {
+
+        background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../img/hero_style/hero768.jpg");
+       
+      }
+      @include mq(retina) {
         background-image: linear-gradient(
           to right,
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
         url("../img/hero_style/hero768@2x.jpg");
+        
       }
 
-    }
+}
 
-    // @include mq(desktop) {
-    //   padding-top: 200px;
-    //   padding-bottom: 200px;
-    //   height: 600px;
-    // }
-  
-  }
-
-  .main-title {
+.main-title {
     color: var(--white-cl);
     font-weight: 900;
     font-size: 44px;
@@ -83,7 +75,7 @@
       width: 360px;
     }
   }
-  .hero__btn {
+.hero__btn {
     color: var(--white-cl);
     text-align: center;
     font-size: 16px;
