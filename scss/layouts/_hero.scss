@@ -1,13 +1,13 @@
 .hero {
     background-color: var(--main-bg-cl);
     text-align: center;
-    max-width: 1600px;
-    // background-image: linear-gradient(
-    //     to right,
-    //     rgba(47, 48, 58, 0.4),
-    //     rgba(47, 48, 58, 0.4)
-    //   ),
-    //   url("../img/hero_style/hero480.jpg");
+    width: 480;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../img/hero_style/hero-480.jpg");
     background-repeat: no-repeat;
     background-position: center;
     margin-left: auto;
@@ -16,52 +16,24 @@
     padding-top: 118px;
     padding-bottom: 118px;
 
-    @include mq(mobile) {
-      background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url("../img/hero_style/hero480.jpg");
-      
-      @include mq(retina){
+    @include mq(retina) {
         background-image: linear-gradient(
           to right,
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url("../img/hero_style/hero480@2x.jpg");
+        url("../img/hero_style/hero-960.jpg");
        
-      }
     }
-    @include mq(tablet) {
+
+    @include mq(tablet-only) {
 
         background-image: linear-gradient(
           to right,
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url("../img/hero_style/hero768.jpg");
-       
-      }
-      @include mq(retina) {
-        background-image: linear-gradient(
-          to right,
-          rgba(47, 48, 58, 0.4),
-          rgba(47, 48, 58, 0.4)
-        ),
-        url("../img/hero_style/hero768@2x.jpg");
-        
-      }
-      @include mq(desktop) {
-        padding-top: 200px;
-        padding-bottom: 200px;
-        background-image: linear-gradient(
-          to right,
-          rgba(47, 48, 58, 0.4),
-          rgba(47, 48, 58, 0.4)
-        ),
-        url("../img/hero_style/hero1200.jpg");
+        url("../img/hero_style/hero-768.jpg");
 
         @include mq(retina) {
           background-image: linear-gradient(
@@ -69,29 +41,53 @@
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)
           ),
-          url("../img/hero_style/hero1200@2x.jpg");
+          url("../img/hero_style/hero-1536.jpg");
+          
         }
+       
       }
+ 
+    @include mq(desktop) {
+        padding-top: 200px;
+        padding-bottom: 200px;
+        background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../img/hero_style/hero-1600.jpg");
+
+        @include mq(retina) {
+          background-image: linear-gradient(
+            to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+          ),
+          url("../img/hero_style/hero-3200.jpg");
+        }
+    }
 
 }
 
 .main-title {
     color: var(--white-cl);
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    letter-spacing: 2.64px;
+    letter-spacing: 1.56px;
+    font-size: 26px;
+    line-height: 1.61;
     text-transform: uppercase;
-    width: 696px;
+    width: 360px;
     padding: 0;
     margin: 0 auto;
     margin-bottom: 30px;
 
-    @include mq(mobile) {
-      font-size: 26px;
-      line-height: 1.61;
-      letter-spacing: 1.56px;
-      width: 360px;
+ 
+    @include mq(desktop) {
+      font-size: 44px;
+      width: 696px;
+      line-height: 1.36;
+      letter-spacing: 2.64px;
+
     }
   }
 .hero__btn {
