@@ -1257,6 +1257,8 @@ img {
 }
 .team-list {
   gap: 30px;
+  margin: 0;
+  padding: 0;
 }
 @media screen and (max-width: 767.98px) {
   .team-list {
