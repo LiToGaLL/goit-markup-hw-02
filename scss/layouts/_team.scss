@@ -40,6 +40,11 @@
         }
        
       }
+      &__foto {
+        @include mq(mobile-only) {
+          
+        }
+      }
   }
   
 
