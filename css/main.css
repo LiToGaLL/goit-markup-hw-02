@@ -56,12 +56,15 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    height: 28px;
+    margin-right: auto;
   }
 }
 @media screen and (min-width: 1200px) {
   .logo {
     font-size: 26px;
     letter-spacing: 0.78px;
+    height: 31px;
   }
 }
 
@@ -999,6 +1002,12 @@ img {
       -ms-flex-align: center;
           align-items: center;
 }
+.nav__mobile {
+  margin: 0;
+  width: 450px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
 
 .nav__list {
   margin-left: 93px;
@@ -1008,6 +1017,11 @@ img {
   gap: 50px;
   margin-top: 0;
   margin-bottom: 0;
+}
+@media screen and (max-width: 767.98px) {
+  .nav__list {
+    display: none;
+  }
 }
 .nav__list--link {
   color: #212121;
@@ -1052,6 +1066,11 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media screen and (max-width: 767.98px) {
+  .contact--list {
+    display: none;
+  }
 }
 
 .contact__mail {
@@ -1111,6 +1130,36 @@ img {
   fill: var(--main-cl);
   -webkit-transition: fill var(--primary-translate);
   transition: fill var(--primary-translate);
+}
+
+@media screen and (max-width: 767.98px) {
+  .menu-button {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    margin-left: auto;
+    border-color: transparent;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
+  display: bloc;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
 }
 
 .hero {
