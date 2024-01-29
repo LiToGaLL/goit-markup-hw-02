@@ -6,6 +6,15 @@
       margin-bottom: 60px;
     }
 
+    @include mq(tablet-only) {
+      margin-right: 74px;
+      margin-left: auto;
+    }
+   
+    @include mq(desktop){
+      margin-right: 93px;
+    }
+
     &__title {
         font-family: var(--main-font);
         font-size: 14px;
@@ -17,11 +26,17 @@
         line-height: normal;
         margin-bottom: 20px;
 
-        @include mq(mobile) {
+        @include mq(mobile-only) {
           display: flex;
           align-items: center;
           justify-content: center;
         }
+        @include mq(tablet-only){
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      
       }
     &__list {
         display: flex;

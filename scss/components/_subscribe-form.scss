@@ -6,6 +6,11 @@
       align-items: center;
       justify-content: center;
     }
+    @include mq(tablet-only) {
+      margin-top: 60px;
+      margin-left: 151px;
+      margin-right: auto;
+    }
 }
   .subscribe__title {
     font-family: var(--main-font);
@@ -18,18 +23,28 @@
     line-height: normal;
     margin-bottom: 20px;
     max-height: 16px;
+
+    @include mq(tablet-only) {
+      text-align: center;
+    }
   }
-  .subscribe__form {
+.subscribe__form {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     margin: 0;
     padding: 0;
 
-    @include mq(mobile-only) {
-      display: flex;
-      flex-direction: column;
+  @include mq(mobile-only) {
+    display: flex;
+    flex-direction: column;
   }
+
+  @include mq(tablet-only) {
+    display: flex;
+    flex-direction: column;
+  }
+
 }
   .subscribe__input {
     width: 358px;
@@ -57,6 +72,13 @@
     @include mq(mobile-only){
       width: 450px;
       margin-bottom: 20px;
+    }
+    @include mq(tablet-only) {
+      margin-bottom: 20px;
+      width: 450px;
+    }
+    @include mq(desktop) {
+      margin-right: 12px;
     }
   }
 
