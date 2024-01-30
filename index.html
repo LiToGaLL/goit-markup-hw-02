@@ -23,31 +23,42 @@
       <div class="container navigation">
         <nav class="nav nav__mobile">
           <a class="logo logo__mobile" href=""
-          >Web<span class="logo--black">Studio</span></a
+            >Web<span class="logo--black">Studio</span></a
           >
-          <button type="button" class="menu-button is-open" data-menu-button>
-            <svg width="40" height="40" aria-label="перемикач мобільного меню">
+          <button
+            type="button"
+            class="menu-button"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
+          >
+            <svg class="svg-menu" width="40" height="40" aria-label="перемикач мобільного меню" >
               <use class="icon-cross" href="./img/sprite.svg#cross"></use>
               <use class="icon-menu" href="./img/sprite.svg#menu"></use>
             </svg>
           </button>
+          <div class="menu-container" id="menu-container" data-menu>
+            content menu
+          </div>
           <ul class="list nav__list">
             <li class="nav__item">
-              <a class="nav__list--link__current nav__list--link link" href="">Студія</a>
+              <a class="nav__list--link__current nav__list--link link" href=""
+                >Студія</a
+              >
             </li>
             <li class="nav__item">
-              <a class="nav__list--link link" href="./portfolio.html">Портфоліо</a>
+              <a class="nav__list--link link" href="./portfolio.html"
+                >Портфоліо</a
+              >
             </li>
             <li class="nav__item">
               <a class="nav__list--link link" href="">Контакти</a>
             </li>
           </ul>
-       
         </nav>
         <ul class="contact--list list">
           <li class="item item-header">
-            <a class="contact__mail" href="mailto:info@devstudio.com"
-              > 
+            <a class="contact__mail" href="mailto:info@devstudio.com">
               <svg class="contact__icon" width="16px" height="12px">
                 <use href="./img/sprite.svg#envelope"></use>
               </svg>
@@ -55,12 +66,11 @@
             </a>
           </li>
           <li class="item item-header">
-            <a class="contact__tel" href="tel:+380961111111"
-              > <svg class="contact__icon" width="10px" height="16px">
+            <a class="contact__tel" href="tel:+380961111111">
+              <svg class="contact__icon" width="10px" height="16px">
                 <use href="./img/sprite.svg#smartphone"></use>
               </svg>+38 096 111 11 11
-            </a
-            >
+            </a>
           </li>
         </ul>
       </div>
@@ -689,92 +699,121 @@
     <footer class="footer">
       <div class="container container__footer">
         <div class="footer-box">
-          <a class="logo footer__logo" href=""  target="_blank"
-          rel="noopener noreferrer"
-          >Web<span class="logo--white">Studio</span></a
-        >
-        <address class="address">
-          <ul class="address__list">
-            <li class="address__item">
-              <a
-                class="address__link"
-                href="https://goo.gl/maps/btcpsNHgYNXdNAkd9"
-                target="_blank"
-                rel="noopener noreferrer"
-                >м. Київ, пр-т Лесі Українки, 26</a
-              >
-            </li>
-            <li class="item-email">
-              <a 
-                class="address-cont__link " 
-                href="mailto:info@devstudio.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="item-phone">
-              <a 
-                class="address-cont__link " 
-                href="tel:+380961111111"
-                target="_blank"
-                rel="noopener noreferrer"
-                >+38 096 111 11 11</a
-              >
-            </li>
-          </ul>
-        </address>
+          <a
+            class="logo footer__logo"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            >Web<span class="logo--white">Studio</span></a
+          >
+          <address class="address">
+            <ul class="address__list">
+              <li class="address__item">
+                <a
+                  class="address__link"
+                  href="https://goo.gl/maps/btcpsNHgYNXdNAkd9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >м. Київ, пр-т Лесі Українки, 26</a
+                >
+              </li>
+              <li class="item-email">
+                <a
+                  class="address-cont__link"
+                  href="mailto:info@devstudio.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="item-phone">
+                <a
+                  class="address-cont__link"
+                  href="tel:+380961111111"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
         </div>
         <div class="join">
           <h3 class="join__title">приєднуйтесь</h3>
           <ul class="join__list">
             <li class="join__item">
-              <a href="#" class="join__link" target="_blank" rel="noopener noreferrer"
-              aria-label="іконка instagram">
+              <a
+                href="#"
+                class="join__link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="іконка instagram"
+              >
                 <svg class="join__icon">
                   <use href="./img/sprite.svg#instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="join__item">
-              <a href="#" class="join__link" target="_blank" rel="noopener noreferrer"
-              aria-label="іконка twitter">
+              <a
+                href="#"
+                class="join__link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="іконка twitter"
+              >
                 <svg class="join__icon">
                   <use href="./img/sprite.svg#twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="join__item">
-              <a href="#" class="join__link" target="_blank" rel="noopener noreferrer"
-              aria-label="іконка facebook">
+              <a
+                href="#"
+                class="join__link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="іконка facebook"
+              >
                 <svg class="join__icon">
                   <use href="./img/sprite.svg#facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="join__item">
-              <a href="#" class="join__link" target="_blank" rel="noopener noreferrer"
-              aria-label="іконка linkedin">
+              <a
+                href="#"
+                class="join__link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="іконка linkedin"
+              >
                 <svg class="join__icon">
                   <use href="./img/sprite.svg#linkedin"></use>
                 </svg>
               </a>
             </li>
-         </ul>
+          </ul>
         </div>
         <div class="subscribe">
           <h3 class="subscribe__title">Підпишіться на розсилку</h3>
           <form class="subscribe__form">
-            <input class="subscribe__input" type="email" name="mail" id="mail" placeholder="E-mail" required>
-            <button type="submit" class="subscribe__btn">Підписатися<svg class="icon-send" width="24" height="24">
+            <input
+              class="subscribe__input"
+              type="email"
+              name="mail"
+              id="mail"
+              placeholder="E-mail"
+              required
+            />
+            <button type="submit" class="subscribe__btn">
+              Підписатися<svg class="icon-send" width="24" height="24">
                 <use href="./img/sprite.svg#icon-send"></use>
               </svg>
             </button>
           </form>
         </div>
-
       </div>
-
     </footer>
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
