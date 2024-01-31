@@ -53,11 +53,11 @@ body {
 }
 @media screen and (min-width: 480px) {
   .logo {
+    display: block;
+    height: 28px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 28px;
-    margin-right: auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -976,6 +976,12 @@ img {
     padding-top: 94px;
     padding-bottom: 94px;
   }
+}
+
+.menu--socials__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .header {

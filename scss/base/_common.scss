@@ -22,9 +22,9 @@ body {
     color: var(--white-cl);
    }
    @include mq(mobile) {
-    align-items: center;
+    display: block;
     height: 28px;
-    margin-right: auto;
+    align-items: center;
    }
    
    @include mq(desktop) {
