@@ -5,6 +5,7 @@ body {
     letter-spacing: 0.42px;
     color: var(--main-txt-cl);
   }
+
 .logo {
     color: var(--blue-cl);
     font-family: var(--secondary-font);
@@ -35,3 +36,6 @@ body {
 
 }
 
+body.modal-open {
+  overflow: hidden;
+}

@@ -29,59 +29,98 @@
             type="button"
             class="menu-button"
             aria-expanded="false"
-            aria-controls="menu-container"
+            aria-controls="mobile-menu"
             data-menu-button
           >
-            <svg class="svg-menu" width="40" height="40" aria-label="перемикач мобільного меню" >
+            <svg
+              class="svg-menu"
+              width="40"
+              height="40"
+              aria-label="перемикач мобільного меню"
+            >
               <use class="icon-cross" href="./img/sprite.svg#cross"></use>
               <use class="icon-menu" href="./img/sprite.svg#menu"></use>
             </svg>
           </button>
-          <div class="menu-container" id="menu-container" data-menu>
-            <div class="menu--nav">
-              <ul class="menu--nav__list">
-                <li class="menu--nav__item menu--nav__item--current item" >
-                  <a class="menu--nav__link" href="#" rel="noopener noreferrer">Студія</a>
-                </li>
-                <li class="menu--nav__item item">
-                  <a class="menu--nav__link" href="./portfolio.html" rel="noopener noreferrer">Портфоліо</a>
-                </li>
-                <li class="menu--nav__item item">
-                  <a class="menu--nav__link" href="#" rel="noopener noreferrer">Контакти</a>
-                </li>
-              </ul>
-            </div>
-            <div class="menu--contact">
-              <ul class="menu--contact__list">
-                <li class="menu--contact__item item">
-                  <a class="menu--contact__tel" href="tel:+380961111111" rel="noopener noreferrer">+38 096 111 11 11</a>
-                </li>
-                <li class="menu--contact__item item">
-                  <a class="menu--contact__mail" href="mailto:info@devstudio.com" rel="noopener noreferrer">info@devstudio.com</a>
-                </li>
-              </ul>
-            </div>
-            <div class="menu--socials">
-              <ul class="menu--socials__list list">
-                <li class="menu--socials__item">
-                  <a class="menu--socials__link" href="#"  target="_blank"
-                  rel="noopener noreferrer">Instagram</a>
-                </li>
-                <li class="menu--socials__item">
-                  <a class="menu--socials__link" href="#"  target="_blank"
-                  rel="noopener noreferrer">Twitter</a>
-                </li>
-                <li class="menu--socials__item">
-                  <a class="menu--socials__link" href="#"  target="_blank"
-                  rel="noopener noreferrer">Facebook</a>
-                </li>
-                <li class="menu--socials__item">
-                  <a class="menu--socials__link" href="#"  target="_blank"
-                  rel="noopener noreferrer">LinkedIn</a>
-                </li>
-              </ul>
-            </div>
+          <div class="mobile-menu" id="mobile-menu" data-menu>
+            <ul class="mobile-menu__nav">
+              <li class="mobile-menu__item mobile-menu__item--current item">
+                <a class="mobile-menu__link" href="#" rel="noopener noreferrer"
+                  >Студія</a>
+              </li>
+              <li class="mobile-menu__item item">
+                <a
+                  class="mobile-menu__link"
+                  href="./portfolio.html"
+                  rel="noopener noreferrer"
+                  >Портфоліо</a>
+              </li>
+              <li class="mobile-menu__item item">
+                <a class="mobile-menu__link" href="#" rel="noopener noreferrer"
+                  >Контакти</a
+                >
+              </li>
+            </ul>
+
+            <ul class="mobile-menu__contacts">
+              <li class="mobile-menu__item item">
+                <a
+                  class="mobile-menu__link"
+                  href="tel:+380961111111"
+                  rel="noopener noreferrer"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="mobile-menu__item item">
+                <a
+                  class="mobile-menu__link"
+                  href="mailto:info@devstudio.com"
+                  rel="noopener noreferrer"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+
+            <ul class="mobile-menu__socials">
+              <li class="mobile-menu__item">
+                <a
+                  class="mobile-menu__link"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Instagram</a
+                >
+              </li>
+              <li class="mobile--menu__item">
+                <a
+                  class="mobile--menu__link"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Twitter</a
+                >
+              </li>
+              <li class="mobile--menu__item">
+                <a
+                  class="menu--socials__link"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Facebook</a
+                >
+              </li>
+              <li class="mobile-menu__item">
+                <a
+                  class="menu--socials__link"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
           </div>
+
           <ul class="list nav__list">
             <li class="nav__item">
               <a class="nav__list--link__current nav__list--link link" href=""
@@ -110,8 +149,8 @@
           <li class="item item-header">
             <a class="contact__tel" href="tel:+380961111111">
               <svg class="contact__icon" width="10px" height="16px">
-                <use href="./img/sprite.svg#smartphone"></use>
-              </svg>+38 096 111 11 11
+                <use href="./img/sprite.svg#smartphone"></use></svg
+              >+38 096 111 11 11
             </a>
           </li>
         </ul>
