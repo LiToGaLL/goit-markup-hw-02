@@ -14,11 +14,11 @@
     }
   })();
 
-  // document.querySelector('.header .menu-button').addEventListener('click',function(target){
-  //   let isOpen = !this.classList.contains('is-open');
-  //   if(isOpen) {
-  //     document.body.setAttribute('style','overflow:hidden;');
-  //     return;
-  //   }
-  //   document.body.removeAttribute('style');  
-  // });
+  document.querySelector('.header .menu-button').addEventListener('click',function(target){
+    let isOpen = !this.classList.contains('is-open');
+    if(isOpen) {
+      document.body.setAttribute('style','overflow:hidden;');
+      return;
+    }
+    document.body.removeAttribute('style');  
+  });

@@ -16,56 +16,105 @@
   z-index: 1000;
   
 }
-
+@include mq(mobile-only) {
+  
 .mobile-menu {
+  display: none;
   position: fixed;
-  height: 100%;
-  width: 100%;
   top: 0;
   left: 0;
-  padding: 48px 40px 48px 40px;
-  background-color: white;
-  font-size: 20px;
-  overflow-y: scroll;
+  width: 100%;
+  height: 100%;
 
-    &.is-open {
-    display: block;
-    }
+  padding-top: 48px;
+  padding-left: 40px;
+  padding-bottom: 48px;
+
+  background-color: #ffffff;
+
+  &.is-open {
+    display: flex;
+    flex-direction: column;
+  }
 
   &__nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  &__nav-item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+ 
+  &__nav-link {
+    text-decoration: none;
     font-family: var(--main-font);
     font-weight: 500;
     font-size: 40px;
     letter-spacing: 0.02em;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  &__item {
-    width: 139px;
-    height: 48;
+    color: var(--secondary-txt-cl);
+    height: 48px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
   }
 
-  &__item:nth( :last-child) {
+  &__contacts {
+    margin-top: auto;
+    list-style: none;
+    margin-left: 0;
+    margin-bottom: 0;
+    padding: 0;
+  }
+  &__contacts-item:not(:last-child) {
     margin-bottom: 32px;
   }
-  
-  &__link {
+  &__contacts-tel {
     text-decoration: none;
-    color: var(--secondary-txt-cl);
-  }
-}
-
-.menu--contact__list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-
-}
-.menu--socials {
-  &__list {
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 34px;
+    letter-spacing: 0.02em;
+    color: var(--blue-cl);
+    height: 40px;
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  &__contacts-mail {
+    text-decoration: none;
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: 0.02em;
+    color: var(--main-txt-cl);
+    height: 28px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
   }
 
-  
+  &__socials {
+    list-style: none;
+    display: flex;
+    margin-top: 64px;
+    margin-bottom: 0;
+    padding: 0;
+  }
+  &__socials-link {
+    text-decoration: none;
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22222;
+    letter-spacing: 0.02em;
+    color: var(--blue-cl);
+  }
+}
+
+}
+@include mq(tablet) {
+  .mobile-menu {
+    display: none;
+  }
 }
