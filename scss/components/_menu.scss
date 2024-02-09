@@ -1,4 +1,6 @@
-
+.menu-button {
+  cursor: pointer;
+}
 .menu-button .icon-cross {
   display: none;
  }
@@ -109,6 +111,24 @@
     line-height: 1.22222;
     letter-spacing: 0.02em;
     color: var(--blue-cl);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  &__socials-item:not(:last-child) {
+    position: relative;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  &__socials-item:not(:last-child) &__socials-current::after {
+    position: absolute;
+    content: "";
+    display: block;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    width: 22px;
+    height: 0px;
+    transform: rotate(-90deg);
+    margin-right: -22px;
   }
 }
 
