@@ -60,6 +60,26 @@
     justify-content: flex-start;
     align-items: center;
   }
+  &__nav-current {
+    width: 139px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    color: var(--blue-cl);
+    position: relative;
+  }
+  &__nav-current::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    bottom: 0;
+    background-color: var(--blue-cl);
+    height: 3px;
+    border-radius: 2px;
+    margin-bottom: -3px;
+
+  }
 
   &__contacts {
     margin-top: auto;
