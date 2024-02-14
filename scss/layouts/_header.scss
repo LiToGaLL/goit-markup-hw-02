@@ -16,9 +16,7 @@
 
     &__mobile { 
       margin: 0;
-      width: 450px;
-      padding-top: 16px;
-      padding-bottom: 16px;
+      min-width: 450px;
     }
   }
   .nav__list {
@@ -30,6 +28,10 @@
 
     @include mq(mobile-only) {
       display: none;
+    }
+    @include mq(tablet-only) {
+      padding-left: 0;
+      margin-left: 87px;
     }
 
     &--link {
@@ -45,7 +47,9 @@
         margin: 0;
         transition: color var(--primary-translate);
 
-      
+        @include mq(tablet-only) {
+          letter-spacing: 0.02em;
+        }
       }
       
     &--link__current {
@@ -73,12 +77,21 @@
   
   .contact--list {
     display: flex;
-    gap: 30px;
+    
     margin-left: auto;
     align-items: center;
 
     @include mq(mobile-only) {
       display: none;
+    }
+    @include mq(tablet-only) {
+      flex-direction: column;
+      align-items: flex-start;
+      padding-left: 0;
+
+    }
+    @include mq(desktop) {
+      gap: 30px;
     }
   }
   .contact__mail {
@@ -103,6 +116,11 @@
     &:hover .contact__icon,
     &:focus .contact__icon {
       fill: var(--blue-cl);
+    }
+    @include mq(tablet-only) {
+      font-size: 12px;
+      letter-spacing: 0.02em;
+      margin-bottom: 10px;
     }
   }
 
@@ -129,6 +147,10 @@
     &:hover .contact__icon {
       fill: var(--blue-cl);
     }
+    @include mq(tablet-only) {
+      font-size: 12px;
+      letter-spacing: 0.02em;
+    }
   }
 
   
@@ -137,7 +159,18 @@
     fill: var(--main-cl);
     transition: fill var(--primary-translate);
   }
-
+  .tablet__mail{
+    @include mq(tablet-only){
+      width: 14px;
+      height: 10px;
+    }
+  }
+  .tablet__tel {
+    @include mq(tablet-only) {
+      width: 10px;
+      height: 14px;
+    }
+  }
 .menu-button {
  
     display: inline-flex;

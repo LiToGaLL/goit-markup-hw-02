@@ -22,10 +22,15 @@ body {
    &--white {
     color: var(--white-cl);
    }
+
    @include mq(mobile) {
     display: block;
     height: 28px;
     align-items: center;
+   }
+   @include mq(mobile-only) {
+    margin-top: 16px;
+    margin-bottom: 16px;
    }
    
    @include mq(desktop) {
@@ -33,7 +38,7 @@ body {
     letter-spacing: 0.78px;
     height: 31px;
    }
-
+   
 }
 
 body.modal-open {

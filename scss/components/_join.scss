@@ -1,6 +1,6 @@
 .join {
     display: flex;
-    // margin-right: 93px;
+  
     flex-direction: column;
     @include mq(mobile-only) {
       margin-bottom: 60px;
