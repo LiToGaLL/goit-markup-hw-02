@@ -36,6 +36,7 @@
 
         @include mq(mobile-only) {
           width: 100%;
+          
         }
 
        @include mq(tablet-only) {
@@ -43,6 +44,11 @@
         }
                   
       }
+    &__item:not(:last-child) {
+      @include mq(mobile-only) {
+        margin-bottom: 30px;
+      }
+    }
    
     &__icon {
         display: flex;
@@ -73,6 +79,9 @@
         margin-bottom: 10px;
         line-height: normal;
         padding: 0;
+        @include mq(mobile-only){
+          text-align: center;
+        }
       }
 
     &__text {
