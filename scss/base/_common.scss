@@ -22,6 +22,12 @@ body {
    &--white {
     color: var(--white-cl);
    }
+   
+   @include mq(not-mobile) {
+    display: block;
+    height: 28px;
+    align-items: center;
+   }
 
    @include mq(mobile) {
     display: block;

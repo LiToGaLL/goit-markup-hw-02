@@ -69,6 +69,26 @@
         }
     }
 
+    @include mq(not-mobile){
+      max-width: 479px;
+      // width: 320px;
+      background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../img/hero_style/hero-480.jpg");
+      @include mq(retina) {
+        background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../img/hero_style/hero-960.jpg");
+       
+    }
+    }
+
 }
 
 .main-title {
@@ -78,11 +98,18 @@
     font-size: 26px;
     line-height: 1.61;
     text-transform: uppercase;
-    width: 360px;
+ 
     padding: 0;
     margin: 0 auto;
     margin-bottom: 30px;
-
+    
+    @include mq(not-mobile){
+      font-size: 20px;
+     
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
  
     @include mq(desktop) {
       font-size: 44px;

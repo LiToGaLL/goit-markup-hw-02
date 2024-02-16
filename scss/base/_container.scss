@@ -5,8 +5,16 @@
     margin-left: auto;
     margin-right: auto;
     
+    //  not-mobile screen
+    @media screen and (min-width: 320px) {
+      width: 320px;
+    }
+    @include mq(not-mobile) {
+      width: 320px;
+    }
+    
     // mobile screen from 480px
-    @media screen and (min-width: 480px){
+    @media screen and (min-width: 480px) {
       width: 480px;
     }
 
@@ -29,5 +37,5 @@
     @include mq(desktop) {
       width: 1200px;
     }
-  }
+}
 

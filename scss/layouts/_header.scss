@@ -15,8 +15,10 @@
     align-items: center;
 
     &__mobile { 
-      margin: 0;
-      min-width: 450px;
+      @include mq(mobile){
+        margin: 0;
+        min-width: 450px;
+      }
     }
   }
   .nav__list {
@@ -179,7 +181,10 @@
     border: none;
     margin-left: auto;
     border-color: transparent;
-
+  
+  @include mq(not-mobile) {
+    margin-left: 146px;
+  } 
   @include mq(tablet) {
     display: none;
   }

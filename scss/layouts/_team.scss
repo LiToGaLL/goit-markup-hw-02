@@ -1,7 +1,6 @@
 .team {
     background-color: #f5f4fa;
-    // padding-top: 94px;
-    // padding-bottom: 94px;
+   
     
 
     &__titele {
@@ -17,6 +16,10 @@
         gap: 30px;
         margin: 0 auto;
         padding: 0;
+
+        @include mq(not-mobile) {
+          width: 100%;
+        }
 
         @include mq(mobile-only) {
           width: 100%;

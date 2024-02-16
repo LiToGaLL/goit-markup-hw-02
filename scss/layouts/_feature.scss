@@ -8,7 +8,11 @@
         margin-right: auto;
         padding: 0;
         gap: 30px;
-
+        
+        @include mq(not-mobile) {
+          display: block;
+        }
+        
         @include mq(mobile-only) {
           display: block;
         }
@@ -33,6 +37,10 @@
         width: 270px;
         display: block;
         padding: 0;
+        
+        @include mq(not-mobile) {
+          width: 100%;
+        }
 
         @include mq(mobile-only) {
           width: 100%;
@@ -61,6 +69,10 @@
         background-position: center;
         align-items: center;
         margin-bottom: 30px;
+
+        @include mq(not-mobile) {
+          width: 100%;
+        }
 
         @include mq(mobile-only) {
           width: 100%;
