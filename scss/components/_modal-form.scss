@@ -161,6 +161,11 @@
       cursor: pointer;
       border-color: var(--blue-cl);
     }
+    &:hover + .modal__icon,
+    &:focus + .modal__icon,
+    &:active + .modal__icon {
+      fill: var(--blue-cl);
+    }
   }
 
   .modal__icon {
@@ -173,15 +178,9 @@
     bottom: 0;
     display: flex;
     transition: fill var(--primary-translate);
-
-    .modal-input:hover + &,
-    .modal-input:focus + &,
-    .modal-input:active + & {
-      fill: var(--blue-cl);
-    }
  
   }
-
+  
   
   .comment {
     display: flex;

@@ -586,6 +586,9 @@ img {
   cursor: pointer;
   border-color: var(--blue-cl);
 }
+.modal__input:hover + .modal__icon, .modal__input:focus + .modal__icon, .modal__input:active + .modal__icon {
+  fill: var(--blue-cl);
+}
 
 .modal__icon {
   position: absolute;
@@ -600,9 +603,6 @@ img {
   display: flex;
   -webkit-transition: fill var(--primary-translate);
   transition: fill var(--primary-translate);
-}
-.modal-input:hover + .modal__icon, .modal-input:focus + .modal__icon, .modal-input:active + .modal__icon {
-  fill: var(--blue-cl);
 }
 
 .comment {
