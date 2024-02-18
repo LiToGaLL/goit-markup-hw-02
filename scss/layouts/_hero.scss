@@ -110,6 +110,9 @@
       margin-right: auto;
       text-align: center;
     }
+    @include mq(tablet-only) {
+      width: 360px;
+    }
  
     @include mq(desktop) {
       font-size: 44px;

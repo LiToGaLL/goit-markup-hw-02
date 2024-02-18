@@ -1,14 +1,20 @@
 .menu-button {
   cursor: pointer;
+  
 }
+
 .menu-button .icon-cross {
   display: none;
  }
 .menu-button.is-open .icon-cross {
   display: block;
- 
-  
  }
+
+ .icon-cross:hover,
+ .icon-cross:focus,
+ .icon-cross:active {
+  fill: var(--blue-cl);
+}
 .menu-button.is-open .icon-menu {
   display: none;
  }
@@ -16,7 +22,7 @@
   background-color: white;
   position: static;
   z-index: 1000;
-  
+ 
 }
 @include mq(mobile-only) {
   
@@ -46,6 +52,10 @@
   }
   &__nav-item:not(:last-child) {
     margin-bottom: 32px;
+
+    @include mq(not-mobile) {
+      margin-bottom: 25px;
+    }
   }
  
   &__nav-link {
@@ -59,6 +69,10 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+
+    @include mq(not-mobile) {
+      font-size: 30px;
+    }
   }
   &__nav-current {
     width: 139px;
@@ -90,6 +104,10 @@
   }
   &__contacts-item:not(:last-child) {
     margin-bottom: 32px;
+
+    @include mq(not-mobile) {
+      margin-bottom: 25px;
+    }
   }
   &__contacts-tel {
     text-decoration: none;
@@ -102,6 +120,10 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+
+    @include mq(not-mobile) {
+      font-size: 25px;
+    }
   }
   &__contacts-mail {
     text-decoration: none;
@@ -114,6 +136,10 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+
+    @include mq(not-mobile) {
+      font-size: 22px;
+    }
   }
 
   &__socials {
@@ -122,6 +148,10 @@
     margin-top: 64px;
     margin-bottom: 0;
     padding: 0;
+
+    @include mq(not-mobile) {
+      margin-top: 45px;
+    }
   }
   &__socials-link {
     text-decoration: none;
@@ -134,6 +164,10 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+
+    @include mq(not-mobile) {
+      font-size: 12px;
+    }
   }
   &__socials-item:not(:last-child) {
     position: relative;
