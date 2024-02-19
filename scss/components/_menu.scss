@@ -1,11 +1,10 @@
 .menu-button {
   cursor: pointer;
   
-  &:hover,
-  &:focus,
-  &:active {
-    color: var(--blue-cl);
-  }
+<<<<<<< HEAD
+
+=======
+>>>>>>> parent of 4c56d2c (update)
 }
 
 .menu-button .icon-cross {
@@ -13,7 +12,12 @@
  }
 .menu-button.is-open .icon-cross {
   display: block;
- 
+ }
+
+ .icon-cross:hover,
+ .icon-cross:focus,
+ .icon-cross:active {
+  fill: var(--blue-cl);
 }
 .menu-button.is-open .icon-menu {
   display: none;
