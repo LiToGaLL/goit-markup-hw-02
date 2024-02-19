@@ -182,9 +182,7 @@
     margin-left: auto;
     border-color: transparent;
   
-  @include mq(not-mobile) {
-    margin-left: 146px;
-  } 
+ 
   @include mq(tablet) {
     display: none;
   }

@@ -1,10 +1,11 @@
 .menu-button {
   cursor: pointer;
-  
-<<<<<<< HEAD
+}
 
-=======
->>>>>>> parent of 4c56d2c (update)
+.menu-button:hover,
+.menu-button:focus,
+.menu-button:active {
+  fill: var(--blue-cl);
 }
 
 .menu-button .icon-cross {
@@ -14,11 +15,7 @@
   display: block;
  }
 
- .icon-cross:hover,
- .icon-cross:focus,
- .icon-cross:active {
-  fill: var(--blue-cl);
-}
+
 .menu-button.is-open .icon-menu {
   display: none;
  }
@@ -194,5 +191,10 @@
 @include mq(tablet) {
   .mobile-menu {
     display: none;
+  }
+}
+.nav__mobile {
+  @include mq(not-mobile) {
+    width: 100%;
   }
 }

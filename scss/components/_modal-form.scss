@@ -83,6 +83,7 @@
     &:focus {
         border-color: var(--blue-cl);
       }
+  
   }
  
   .btn-close__icon {
@@ -118,6 +119,11 @@
     margin: 0;
     padding: 0;
     margin-bottom: 12px;
+
+    @include mq(not-mobile){
+      font-size: 15px;
+    }
+
   }
   
   .modal__label {
@@ -165,6 +171,10 @@
     &:focus + .modal__icon,
     &:active + .modal__icon {
       fill: var(--blue-cl);
+    }
+
+    @include mq(not-mobile) {
+      height: 28px;
     }
   }
 
@@ -223,6 +233,10 @@
       cursor: pointer;
       border-color: var(--blue-cl);
     }
+
+    @include mq(not-mobile) {
+      height: auto;
+    }
   }
  
   .modal__chexbox {
@@ -234,6 +248,11 @@
     margin-bottom: 30px;
     padding: 0;
     transition: background-color var(--primary-translate);
+
+    @include mq(not-mobile) {
+      margin-top: 15px;
+      margin-bottom: 20px;
+    }
   }
   .chexbox:hover + .modal__chexbox--custom,
   .chexbox:focus + .modal__chexbox--custom {
@@ -332,5 +351,9 @@
     &:active {
       background-color: var(--blue-cl);
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+
+    @include mq(not-mobile) {
+      height: 40px;
     }
   }
