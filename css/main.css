@@ -1066,9 +1066,6 @@ img {
 .menu-button {
   cursor: pointer;
 }
-.menu-button:hover, .menu-button:focus, .menu-button:active {
-  color: var(--blue-cl);
-}
 
 .menu-button .icon-cross {
   display: none;

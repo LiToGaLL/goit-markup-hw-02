@@ -1,11 +1,7 @@
 .menu-button {
   cursor: pointer;
   
-  &:hover,
-  &:focus,
-  &:active {
-    color: var(--blue-cl);
-  }
+
 }
 
 .menu-button .icon-cross {
