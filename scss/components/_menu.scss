@@ -1,11 +1,11 @@
 .menu-button {
   cursor: pointer;
-}
-
-.menu-button:hover,
-.menu-button:focus,
-.menu-button:active {
-  fill: var(--blue-cl);
+  
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--blue-cl);
+  }
 }
 
 .menu-button .icon-cross {
